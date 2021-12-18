@@ -23,14 +23,20 @@ const StyledContainer = styled.div`
 `;
 
 const StyledContentBlock = styled.div`
-  max-width: 600px;
+  max-width: calc(600px - 200px);
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 100px;
 `;
 
 const ImageBlock = styled.div`
   flex: 1;
   background: red;
+  position: relative;
 `;
 
 export default GridSegment;
