@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDataContext } from "../DataProvider/DataProvider";
 import styled from "styled-components";
 import gsap from "gsap";
-import { useEffect } from "react/cjs/react.development";
 import { useMediaQuery } from "@mui/material";
 
 const lineNum = 10;

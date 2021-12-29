@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import GridSegment from "../components/grid/GridSegment";
+import GridSegment from "../components/Grid/GridSegment";
 import ProjectBrief from "../components/ProjectBrief/ProjectBrief";
 import styled from "styled-components";
 

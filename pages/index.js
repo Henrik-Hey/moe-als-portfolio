@@ -1,8 +1,8 @@
+import React, { useEffect, useState, useRef } from "react";
 import Section from "../components/Section/Section";
 import { createGlobalStyle } from "styled-components";
 import NavContainer from "../components/NavContainer/navContainer";
 import { DataProvider } from "../components/DataProvider/DataProvider";
-import { useEffect, useState, useRef } from "react";
 import Backdrop from "../components/Backdrop/Backdrop";
 
 import Intro from "../sections/intro";
