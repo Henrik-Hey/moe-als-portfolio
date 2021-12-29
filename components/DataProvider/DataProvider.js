@@ -27,7 +27,6 @@ const DataProvider = ({ children, sections, container }) => {
             ...data,
             currentSection,
           });
-          sections[currentSection].current.scrollIntoView();
           scrollRef.current.aggScroll = 0;
         }
         scrollRef.current.oldScroll = new Date().getTime();

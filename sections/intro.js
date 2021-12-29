@@ -29,6 +29,13 @@ const IntroContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0px 50px;
+  width: calc(100% - 100px);
+
+  @media (min-width: 764px) {
+    padding: 0px;
+    width: 100%;
+  }
 `;
 
 const IntroText1 = styled.h1`
@@ -49,10 +56,14 @@ const IntroText2 = styled.h2`
 
 const ButtonContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media (min-width: 764px) {
+    flex-direction: row;
+  }
 `;
 
 const Button1 = styled.button`
@@ -64,10 +75,13 @@ const Button1 = styled.button`
   width: 335px;
   text-align: center;
   padding: 10px;
-  margin-right: 10px;
   cursor: pointer;
 
   &:hover {
+  }
+
+  @media (min-width: 764px) {
+    margin-right: 10px;
   }
 `;
 
@@ -80,10 +94,13 @@ const Button2 = styled.button`
   width: 335px;
   text-align: center;
   padding: 10px;
-  margin-left: 10px;
   cursor: pointer;
 
   &:hover {
+  }
+
+  @media (min-width: 764px) {
+    margin-left: 10px;
   }
 `;
 

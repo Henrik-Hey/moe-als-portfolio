@@ -3,10 +3,12 @@ import { useDataContext } from "../DataProvider/DataProvider";
 import styled from "styled-components";
 import gsap from "gsap";
 import { useEffect } from "react/cjs/react.development";
+import { useMediaQuery } from "@mui/material";
 
 const lineNum = 10;
 
-const Backdrop = () => {
+const Backdrop = ({ container }) => {
+  const isDesktop = useMediaQuery("(min-width:764px)", { noSsr: true });
   const linesRef = React.useRef([]);
   const {
     data: { currentSection },
@@ -29,7 +31,7 @@ const Backdrop = () => {
   }, []);
 
   useEffect(() => {
-    if (!linesRef) return;
+    if (!linesRef || !container || !isDesktop) return;
     const lines = linesRef.current;
     lines.forEach((line, i) => {
       const rand1 = Math.random() * 100;
@@ -42,7 +44,8 @@ const Backdrop = () => {
         ease: "power3.inOut",
       });
     });
-  }, [currentSection]);
+    container.scrollTo(0, window.innerHeight * currentSection);
+  }, [container, currentSection, isDesktop]);
 
   return (
     <LineContainer>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import GridSegment from "../components/grid/GridSegment";
 import ProjectBrief from "../components/ProjectBrief/ProjectBrief";
+import styled from "styled-components";
 
 const Shiba = () => {
   return (
@@ -30,14 +31,22 @@ const Shiba = () => {
         </>
       }
       image={
-        <Image
-          layout="fill"
-          src={"/images/Shiba1.png"}
-          alt="Image of shiba inu app"
-        />
+        <ImageContainer>
+          <Image
+            layout="fill"
+            objectFit="cover"
+            src={"/images/Shiba1.png"}
+            alt="Image of shiba inu app"
+          />
+        </ImageContainer>
       }
     />
   );
 };
+
+const ImageContainer = styled.div`
+  height: 100vh;
+  width: 100%;
+`;
 
 export default Shiba;

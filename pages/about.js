@@ -5,15 +5,12 @@ import { DataProvider } from "../components/DataProvider/DataProvider";
 import { useEffect, useState, useRef } from "react";
 import Backdrop from "../components/Backdrop/Backdrop";
 
-import Intro from "../sections/intro";
-import Shiba from "../sections/shiba";
-import Apollo from "../sections/apollo";
+import AboutSection from "../sections/about";
+import About2Section from "../sections/about2";
 
-export default function Home() {
-  const introRef = useRef();
-  const shibaRef = useRef();
-  const apolloRef = useRef();
-  const sk8Ref = useRef();
+export default function About() {
+  const aboutRef = useRef();
+  const about2Reft = useRef();
   const [container, setContainer] = useState(null);
 
   useEffect(() => {
@@ -21,23 +18,16 @@ export default function Home() {
   }, []);
 
   return (
-    <DataProvider
-      sections={[introRef, shibaRef, apolloRef, sk8Ref]}
-      container={container}
-    >
+    <DataProvider sections={[aboutRef, about2Reft]} container={container}>
       <Backdrop container={container} />
       <GlobalStyles />
       <NavContainer />
-      <Section ref={introRef} name="Intro">
-        <Intro />
+      <Section ref={aboutRef} name="Intro">
+        <AboutSection />
       </Section>
-      <Section ref={shibaRef} name="SHIBA">
-        <Shiba />
+      <Section ref={about2Reft} name="SHIBA">
+        <About2Section />
       </Section>
-      <Section ref={apolloRef} name="APOLLO">
-        <Apollo />
-      </Section>
-      <Section ref={sk8Ref} name="sk8"></Section>
     </DataProvider>
   );
 }

@@ -12,31 +12,40 @@ const GridSegment = ({ content, image }) => {
 
 const StyledContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   width: 100%;
-  min-height: 100vh;
   height: fit-content;
 
-  @media (max-width: 600px) {
-    flex-direction: column;
+  @media (min-width: 764px) {
+    flex-direction: row;
+    min-height: 100vh;
   }
 `;
 
 const StyledContentBlock = styled.div`
   max-width: calc(600px - 200px);
-  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
-  padding: 0 100px;
+  padding: 100px 50px;
+
+  @media (min-width: 764px) {
+    padding: 0px 100px;
+    min-height: 100vh;
+    width: 100%;
+  }
 `;
 
 const ImageBlock = styled.div`
   flex: 1;
-  background: red;
+  min-height: 50vh;
+  height: fit-content;
   position: relative;
+
+  @media (min-width: 764px) {
+    min-height: 100vh;
+  }
 `;
 
 export default GridSegment;
