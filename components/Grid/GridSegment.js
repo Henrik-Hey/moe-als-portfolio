@@ -1,28 +1,25 @@
 import React from "react";
+import { Container, Grid, Box } from "@mui/material";
 import styled from "styled-components";
 
 const GridSegment = ({ content, image }) => {
   return (
-    <StyledContainer>
-      <StyledContentBlock>{content}</StyledContentBlock>
-      <ImageBlock>{image}</ImageBlock>
-    </StyledContainer>
+    <Container maxWidth="lg">
+      <Grid container>
+        <Grid item xs={12} sm={8} md={6}>
+          <StyledContentBlock>{content}</StyledContentBlock>
+        </Grid>
+        <Grid item xs={12} sm={8} md={6} display="flex">
+          <ImageBlock mr={4} mt={4} mb={4} flex={1}>
+            {image}
+          </ImageBlock>
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 
-const StyledContainer = styled.div`
-  display: flex;
-  flex-direction: column-reverse;
-  width: 100%;
-  height: fit-content;
-
-  @media (min-width: 764px) {
-    flex-direction: row;
-    min-height: 100vh;
-  }
-`;
-
-const StyledContentBlock = styled.div`
+const StyledContentBlock = styled(Box)`
   max-width: calc(600px - 200px);
   height: 100%;
   display: flex;
@@ -37,15 +34,10 @@ const StyledContentBlock = styled.div`
   }
 `;
 
-const ImageBlock = styled.div`
+const ImageBlock = styled(Box)`
   flex: 1;
   min-height: 50vh;
-  height: fit-content;
   position: relative;
-
-  @media (min-width: 764px) {
-    min-height: 100vh;
-  }
 `;
 
 export default GridSegment;

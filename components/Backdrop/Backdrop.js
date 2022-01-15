@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useDataContext } from "../DataProvider/DataProvider";
 import styled from "styled-components";
 import gsap from "gsap";
 import { useMediaQuery } from "@mui/material";
@@ -9,9 +8,6 @@ const lineNum = 10;
 const Backdrop = ({ container }) => {
   const isDesktop = useMediaQuery("(min-width:764px)", { noSsr: true });
   const linesRef = React.useRef([]);
-  const {
-    data: { currentSection },
-  } = useDataContext();
 
   useEffect(() => {
     if (!linesRef) return;
@@ -28,23 +24,6 @@ const Backdrop = ({ container }) => {
       });
     });
   }, []);
-
-  useEffect(() => {
-    if (!linesRef || !container || !isDesktop) return;
-    const lines = linesRef.current;
-    lines.forEach((line, i) => {
-      const rand1 = Math.random() * 100;
-      const rand2 = Math.random() * 100;
-      gsap.to(line, {
-        y: `${rand1}vh`,
-        rotationX: `${rand2}`,
-        rotationY: `${rand2}`,
-        rotationZ: `${rand2}`,
-        ease: "power3.inOut",
-      });
-    });
-    container.scrollTo(0, window.innerHeight * currentSection);
-  }, [container, currentSection, isDesktop]);
 
   return (
     <LineContainer>

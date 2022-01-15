@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import Section from "../components/Section/Section";
 import { createGlobalStyle } from "styled-components";
 import NavContainer from "../components/NavContainer/navContainer";
-import { DataProvider } from "../components/DataProvider/DataProvider";
 import Backdrop from "../components/Backdrop/Backdrop";
 
 import AboutSection from "../sections/about";
@@ -18,17 +17,17 @@ export default function About() {
   }, []);
 
   return (
-    <DataProvider sections={[aboutRef, about2Reft]} container={container}>
+    <>
       <Backdrop container={container} />
       <GlobalStyles />
-      <NavContainer />
+      <NavContainer position="relative" />
       <Section ref={aboutRef} name="Intro">
         <AboutSection />
       </Section>
       <Section ref={about2Reft} name="SHIBA">
         <About2Section />
       </Section>
-    </DataProvider>
+    </>
   );
 }
 
@@ -48,18 +47,5 @@ const GlobalStyles = createGlobalStyle`
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
-
-    @media (min-width: 764px) {
-      -webkit-scroll-snap-type: y mandatory;
-      -moz-scroll-snap-type: y mandatory;
-      -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-      scroll-behavior: smooth;
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-      &::-webkit-scrollbar {
-        display: none;
-      }
-    }
   }
 `;
