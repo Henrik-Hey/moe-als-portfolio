@@ -3,7 +3,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import { useMediaQuery } from "@mui/material";
 
-const NavContainer = ({ position = "absolute" }) => {
+const NavContainer = ({ position = "absolute", color }) => {
   const isDesktop = useMediaQuery("(min-width:764px)", { noSsr: true });
 
   return (
@@ -14,24 +14,36 @@ const NavContainer = ({ position = "absolute" }) => {
       {isDesktop && (
         <>
           <NavLinkContainer>
-            <NavLink href="/">Home</NavLink>
+            <NavLink href="/" $color={color}>
+              Home
+            </NavLink>
             {/* <NavLink href="#">Projects</NavLink> */}
-            <ProjectsDropdown>
+            <ProjectsDropdown $color={color}>
               <span>Projects</span>
               <DropdownContent>
                 <li>
-                  <NavLink href="#">Shiba</NavLink>
+                  <NavLink href="/shiba" $color={color}>
+                    Shiba
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink href="#">Apollo</NavLink>
+                  <NavLink href="#" $color={color}>
+                    Apollo
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink href="#">GoSkate</NavLink>
+                  <NavLink href="#" $color={color}>
+                    GoSkate
+                  </NavLink>
                 </li>
               </DropdownContent>
             </ProjectsDropdown>
-            <NavLink href="#">Resume</NavLink>
-            <NavLink href="/about">About</NavLink>
+            <NavLink href="#" $color={color}>
+              Resume
+            </NavLink>
+            <NavLink href="/about" $color={color}>
+              About
+            </NavLink>
           </NavLinkContainer>
         </>
       )}
@@ -81,7 +93,7 @@ const NavLink = styled.a`
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme, $color }) => ($color ? $color : theme.colors.primary)};
   text-decoration: none;
 `;
 
@@ -123,7 +135,7 @@ const ProjectsDropdown = styled.div`
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme, $color }) => ($color ? $color : theme.colors.primary)};
   text-decoration: none;
 
   &::after {

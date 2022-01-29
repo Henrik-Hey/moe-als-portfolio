@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styled from "styled-components";
 
 const Intro = () => {
@@ -13,7 +14,9 @@ const Intro = () => {
       </IntroText2>
       <ButtonContainer>
         <Button1>Resume</Button1>
-        <Button2>About me</Button2>
+        <Link href="/about" passHref>
+          <Button2>About me</Button2>
+        </Link>
       </ButtonContainer>
     </IntroContainer>
   );
