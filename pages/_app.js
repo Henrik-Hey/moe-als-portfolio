@@ -21,11 +21,10 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      "Inter",
+      "Roboto",
       "-apple-system",
       "BlinkMacSystemFont",
       '"Segoe UI"',
-      "Roboto",
       '"Helvetica Neue"',
       "Arial",
       "sans-serif",
@@ -34,15 +33,53 @@ const theme = createTheme({
       '"Segoe UI Symbol"',
     ].join(","),
   },
+  components: {
+    MuiUseMediaQuery: {
+      defaultProps: {
+        noSsr: true,
+      },
+    },
+    MuiTable: {
+      styleOverrides: {
+        root: {
+          background: "#FFFFFF",
+          overflow: "hidden",
+          boxSizing: "border-box",
+          boxShadow: "none",
+          borderRadius: "10px",
+          overflow: "hidden",
+        },
+      },
+    },
+    MuiTableHead: {
+      styleOverrides: {
+        root: {
+          boxShadow: "none",
+          "& .MuiTableCell-head": {
+            fontWeight: 600,
+          },
+        },
+      },
+    },
+    MuiTableCell: {
+      styleOverrides: {
+        root: {
+          padding: "8px",
+          fontSize: "12px",
+          borderBottom: "none",
+        },
+      },
+    },
+  },
 });
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <MUIThemeProvider theme={theme}>
         <Component {...pageProps} />
       </MUIThemeProvider>
-    </>
+    </ThemeProvider>
   );
 }
 

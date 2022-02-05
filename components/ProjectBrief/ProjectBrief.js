@@ -20,7 +20,7 @@ const ContentContainer = styled.div`
 const Heading = styled.span`
   font-weight: 100;
   font-family: "Epilogue", sans-serif;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.palette.primary.main};
 `;
 
 export default ProjectBrief;

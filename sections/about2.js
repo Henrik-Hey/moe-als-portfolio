@@ -70,7 +70,7 @@ const ContentContainer = styled.div`
 const Link = styled.a`
   font-family: "Epilogue", sans-serif;
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.palette.primary.main};
 `;
 
 export default About2Section;

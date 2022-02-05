@@ -93,7 +93,8 @@ const NavLink = styled.a`
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: ${({ theme, $color }) => ($color ? $color : theme.colors.primary)};
+  color: ${({ theme, $color }) =>
+    $color ? $color : theme.palette.primary.main};
   text-decoration: none;
 `;
 
@@ -135,7 +136,8 @@ const ProjectsDropdown = styled.div`
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: ${({ theme, $color }) => ($color ? $color : theme.colors.primary)};
+  color: ${({ theme, $color }) =>
+    $color ? $color : theme.palette.primary.main};
   text-decoration: none;
 
   &::after {

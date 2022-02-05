@@ -53,7 +53,7 @@ const IntroText2 = styled.h2`
   font-family: "Epilogue", sans-serif;
 
   & > b {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.palette.primary.main};
   }
 `;
 
@@ -70,8 +70,8 @@ const ButtonContainer = styled.div`
 `;
 
 const Button1 = styled.button`
-  background: ${({ theme }) => theme.colors.primary};
-  border: 1px solid ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.palette.primary.main};
+  border: 1px solid ${({ theme }) => theme.palette.primary.main};
   border-radius: 10px;
   color: white;
   font-size: 1.5rem;
@@ -90,9 +90,9 @@ const Button1 = styled.button`
 
 const Button2 = styled.button`
   background: transparent;
-  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.palette.primary.main};
   border-radius: 10px;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.palette.primary.main};
   font-size: 1.5rem;
   width: 335px;
   text-align: center;
