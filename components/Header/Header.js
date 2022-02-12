@@ -1,76 +1,95 @@
 import React from "react";
-import Image from "next/image";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import styled from "styled-components";
 
-const Header = () => {
+const Header = ({
+  logoURL,
+  brand,
+  responsibilities,
+  timeline,
+  theme,
+  color,
+}) => {
   return (
-    <Box position="relative" width="100%" height="585px">
-      <Backdrop src="/images/Shiba1.png" role="presentation" />
+    <Box
+      position="relative"
+      width="100%"
+      minHeight="585px"
+      backgroundColor={color}
+    >
       <Content>
-        <Container maxWidth="lg">
-          <Box
-            width="100%"
-            height="585px"
-            display="flex"
-            flexDirection="column"
-          >
-            <Box flex="1"></Box>
-            <Box
-              width="100%"
-              height="216px"
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-            >
-              <BrandLogo src="/images/ShibaLogo.png" alt="Logo" />
-            </Box>
-            <Box display="flex" flex="1">
+        <Container maxWidth="md">
+          <Box width="100%" minHeight="585px">
+            <Box height="164px"></Box>
+            <Container maxWidth="md">
               <Box
-                flex="1"
+                width="100%"
+                height="216px"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <BrandLogo src={logoURL} alt="Logo" />
+              </Box>
+            </Container>
+            <Grid container spacing={6} minHeight="216px" height="fit-content">
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={3}
                 display="flex"
                 justifyContent="flex-end"
                 flexDirection="column"
               >
                 <Box mb={2}>
                   <Headline>Project:</Headline>
-                  <SubHeadline>Shiba INU</SubHeadline>
+                  <SubHeadline>{brand}</SubHeadline>
                 </Box>
-              </Box>
-              <Box
-                flex="1"
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={3}
                 display="flex"
                 justifyContent="flex-end"
                 flexDirection="column"
               >
                 <Box mb={2}>
                   <Headline>My Responsibilities:</Headline>
-                  <SubHeadline>ux research, design, interviews</SubHeadline>
+                  <SubHeadline>{responsibilities}</SubHeadline>
                 </Box>
-              </Box>
-              <Box
-                flex="1"
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={3}
                 display="flex"
                 justifyContent="flex-end"
                 flexDirection="column"
               >
                 <Box mb={2}>
                   <Headline>Timeline:</Headline>
-                  <SubHeadline>Sep – Nov 2021</SubHeadline>
+                  <SubHeadline>{timeline}</SubHeadline>
                 </Box>
-              </Box>
-              <Box
-                flex="1"
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={3}
                 display="flex"
                 justifyContent="flex-end"
                 flexDirection="column"
               >
                 <Box mb={2}>
                   <Headline>App theme:</Headline>
-                  <SubHeadline>Food delivery</SubHeadline>
+                  <SubHeadline>{theme}</SubHeadline>
                 </Box>
-              </Box>
-            </Box>
+              </Grid>
+            </Grid>
           </Box>
         </Container>
       </Content>
@@ -78,24 +97,14 @@ const Header = () => {
   );
 };
 
-const Backdrop = styled.img`
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 585px;
-  object-fit: cover;
-`;
-
 const BrandLogo = styled.img`
-  height: 216px;
+  width: 100%;
 `;
 
 const Content = styled.div`
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
 `;
 
 const Headline = styled.h2`

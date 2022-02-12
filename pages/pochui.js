@@ -6,24 +6,21 @@ import Header from "../components/Header/Header";
 import CustomTable from "../components/Table/Table";
 import TextMessage from "../components/TextMessage/TextMessage";
 import StickyNote from "../components/StickyNote/StickyNote";
-import StyleGuide from "../components/StyleGuide/StyleGuide";
 import ItemCarousel from "../components/Carousel/Carousel";
+import StyleGuide from "../components/StyleGuide/StyleGuide";
 import styled from "styled-components";
 
-import UserStudyPrep from "../data/UserStudyPrep";
-import PostUserStudy from "../data/PostUserStudy";
-
-export default function Shiba() {
+export default function Pochui() {
   return (
     <>
       <GlobalStyles />
       <Header
-        logoURL="/images/ShibaLogo.png"
-        brand="Shiba Inu"
+        logoURL="/images/pochui/PochuiLogo.png"
+        brand="Pochui"
         responsibilities="ux research & design"
-        timeline="Sep – Nov 2021"
-        theme="Food delivery"
-        color="#EF3840"
+        timeline="Jan – Feb 2022"
+        theme="Lifestyle"
+        color="#325BDE"
       />
       <Box my={10}>
         <Container maxWidth="md">
@@ -39,44 +36,38 @@ export default function Shiba() {
           <Grid container>
             <Grid item xs={12} md={5}>
               <Typography component="p" mb={3}>
-                <Typography component="span" fontWeight={600} color="#FC0202">
-                  Shiba Inu
+                <Typography component="span" fontWeight={600} color="#1E88E5">
+                  Pochui
                 </Typography>{" "}
-                is an Asian food delivery app that is targeted towards college
-                and university students / Busy young adults who don’t have
-                enough time to cook.
+                is a social media platform that’s targeted towards
+                skateboarders, social media influencers, and artists who are
+                interested in growing their social following and online presence
+                and engagement.
               </Typography>
               <Typography component="p">
-                Shiba’s goal is to create a stress-free experience for users who
-                enjoy Asian cuisine. It’s a one-stop-shop for users who don’t
-                want to spend time looking at hundreds of options, when they can
-                be presented with a handful of good ones.
+                Pochui’s goal is to create a tight community for skateboard
+                enthusiasts. It’s a place where you can grow your audience and
+                business while making friends all across the world.
               </Typography>
             </Grid>
             <Grid item xs={12} md={2} />
             <Grid item xs={12} md={5}>
               <Typography>
-                <Typography component="span" fontWeight={600} color="#FC0202">
+                <Typography component="span" fontWeight={600} color="#1E88E5">
                   Challenges:
                 </Typography>
                 <ul>
                   <li>
-                    Create a unique identity for a new food delivery
-                    application.
+                    Create a unique brand for a new social media application.
                   </li>
                   <br />
                   <li>
-                    Present a user -friendly interface that makes it even easier
-                    to pick what you’re craving.
+                    Successfully create a friendly and easy-to-use user
+                    interface that doesn’t overwhelm users.
                   </li>
                   <br />
                   <li>
-                    Think of ways to make the user journey simple and rewarding.
-                  </li>
-                  <br />
-                  <li>
-                    Offer quick, real time solutions for users who are having
-                    trouble choosing.
+                    Think of how to keep the application interesting and unique.
                   </li>
                 </ul>
               </Typography>
@@ -93,30 +84,27 @@ export default function Shiba() {
             fontWeight={600}
             mb={10}
           >
-            Empathize
+            Understanding users
           </Typography>
           <Typography variant="body1" component="p" textAlign="center" mb={10}>
-            Creating{" "}
-            <Typography component="span" fontWeight={600} color="#FC0202">
-              Shiba Inu
-            </Typography>{" "}
-            from scratch, I had to ask myself a few questions, who is the user,
-            why would use this application, how large is this project going to
-            be, and how much of my time will I be spending conducting user
-            interviews and research before the deadline is up. After gathering
-            my ideas on paper, and creating some user personas and Empathy maps
-            — I Figured out the project scope.
+            Much like my previous project - shiba, I had to ask myself a lot of
+            questions to make sure this was heading in the right direction. I
+            had to figure out how big this project was going to be, and how much
+            time I wanted to give myself to get through every stage. That being
+            said, I had to organize my time a lot better around this time to
+            ensure that I’m able to deliver results I’m happy with in a shorter
+            timeframe.
           </Typography>
-          <SectionSubTitle component="p" mt={4}>
+          <SectionSubTitle component="p" my={4}>
             1. User Personas
           </SectionSubTitle>
           <Grid container>
             <Grid item xs={12} md={5.5}>
-              <Box display="flex" my={4}>
+              <Box display="flex" mb={4}>
                 <Box position="relative">
                   <Image
-                    src="/images/shiba/KendrickHey.png"
-                    alt="Picture of Kendrick Hey"
+                    src="/images/pochui/heona.png"
+                    alt="Picture of Heona Fulley"
                     layout="intrinsic"
                     width="128px"
                     height="148px"
@@ -133,44 +121,55 @@ export default function Shiba() {
                     <Typography
                       component="span"
                       fontWeight={600}
-                      color="#FC0202"
+                      color="#1E88E5"
                     >
                       Name:
                     </Typography>{" "}
-                    Kendrick Hey <br />
+                    Heona Fulley
+                    <br />
                     <Typography
                       component="span"
                       fontWeight={600}
-                      color="#FC0202"
+                      color="#1E88E5"
                     >
                       Age:
                     </Typography>{" "}
-                    23 years old <br />
+                    20 years old <br />
                     <Typography
                       component="span"
                       fontWeight={600}
-                      color="#FC0202"
+                      color="#1E88E5"
                     >
                       Occupation:
                     </Typography>{" "}
-                    University student
+                    Student
+                    <br />
+                    <Typography
+                      component="span"
+                      fontWeight={600}
+                      color="#1E88E5"
+                    >
+                      Goal:
+                    </Typography>{" "}
+                    To find a way to connect with other skateboarders online,
+                    and to share clips, highlights, and fails.
                   </Typography>
                 </Box>
               </Box>
               <Typography component="p">
-                Kendrick is a college student with a busy schedule, he often
-                studies from home and doesn&apos;t have much time to get out.
-                When his family isn&apos;t home he likes ordering traditional
-                Korean or Japanese food delivery.
+                Heona is a 20 year-old university student currently majoring in
+                computer science. She spends most of her time studying, but when
+                she’s not drowning in homework, she goes out with friends and
+                watches different skateboarding competitions and reels.
               </Typography>
             </Grid>
             <Grid item xs={12} md={1} />
             <Grid item xs={12} md={5.5}>
-              <Box display="flex" my={4}>
+              <Box display="flex" mb={4}>
                 <Box position="relative">
                   <Image
-                    src="/images/shiba/SyraRye.png"
-                    alt="Picture of Kendrick Hey"
+                    src="/images/pochui/justin.png"
+                    alt="Picture of Justin Sang"
                     layout="intrinsic"
                     width="128px"
                     height="148px"
@@ -187,36 +186,45 @@ export default function Shiba() {
                     <Typography
                       component="span"
                       fontWeight={600}
-                      color="#FC0202"
+                      color="#1E88E5"
                     >
                       Name:
                     </Typography>{" "}
-                    Syra Rye <br />
+                    Justin Sang <br />
                     <Typography
                       component="span"
                       fontWeight={600}
-                      color="#FC0202"
+                      color="#1E88E5"
                     >
                       Age:
                     </Typography>{" "}
-                    31 years old <br />
+                    26 years old <br />
                     <Typography
                       component="span"
                       fontWeight={600}
-                      color="#FC0202"
+                      color="#1E88E5"
                     >
                       Occupation:
                     </Typography>{" "}
-                    Marketing lead
+                    Videographer <br />
+                    <Typography
+                      component="span"
+                      fontWeight={600}
+                      color="#1E88E5"
+                    >
+                      Goal:
+                    </Typography>{" "}
+                    To find a way to create an online profile showcasing
+                    different designs and maybe make money off it.
                   </Typography>
                 </Box>
               </Box>
               <Typography component="p">
-                Syra is a Marketing lead at a design firm, a slight vision
-                problem that makes her unable to read small text, she uses
-                glasses when needed. Syra has a freelance gig on the side, so
-                she doesn&apos;t like cooking over the weekends, she would like
-                to save time cooking by ordering.
+                Justin is a 26 year old male living in Toronto ontario as a film
+                and video major. His primary occupation is videography, and he
+                works for a small company making online content, in his free
+                time - Justin creates skateboard art and skate montages of his
+                friends to upload online.
               </Typography>
             </Grid>
           </Grid>
@@ -227,15 +235,17 @@ export default function Shiba() {
             <Grid item xs={12} md={5.5}>
               <Box>
                 <EmpathyMap
-                  title="Kendrick"
+                  title="Heona"
                   square1={
                     <Typography variant="body2">
                       <Typography variant="body1" fontWeight={700}>
                         Says
                       </Typography>
                       <ul>
-                        <li>I like ordering food</li>
-                        <li>Ordering food is good for the environment</li>
+                        <li>Skateboarding can be scary, but it’s fun</li>
+                        <li>
+                          It’s fun to go out with friends and skateboard places.
+                        </li>
                       </ul>
                     </Typography>
                   }
@@ -246,8 +256,11 @@ export default function Shiba() {
                         Thinks
                       </Typography>
                       <ul>
-                        <li>I hope this food gets here on time</li>
-                        <li>I hope they didn’t mess up my order</li>
+                        <li>
+                          Skateboarding is frustrating but rewarding after a
+                          while
+                        </li>
+                        <li>Skateboarding can be scary sometimes</li>
                       </ul>
                     </Typography>
                   }
@@ -258,8 +271,11 @@ export default function Shiba() {
                         Does
                       </Typography>
                       <ul>
-                        <li>Play games to pass time waiting</li>
-                        <li>Spend time browsing to find the best deals</li>
+                        <li>Go out with friends to skate often</li>
+                        <li>
+                          Spend time at the skatepark to watch and skate w/
+                          friends
+                        </li>
                       </ul>
                     </Typography>
                   }
@@ -269,8 +285,8 @@ export default function Shiba() {
                         Feels
                       </Typography>
                       <ul>
-                        <li>Anxious</li>
-                        <li>Hungry</li>
+                        <li>Happy watching others skateboard</li>
+                        <li>Frustrated trying to learn tricks</li>
                       </ul>
                     </Typography>
                   }
@@ -281,53 +297,54 @@ export default function Shiba() {
             <Grid item xs={12} md={5.5}>
               <Box>
                 <EmpathyMap
-                  title="Syra Rye"
+                  title="Justin"
                   square1={
                     <Typography variant="body2">
                       <Typography variant="body1" fontWeight={700}>
-                        {" "}
                         Says
                       </Typography>
                       <ul>
-                        <li>I don’t like it when food takes long to arrive</li>
-                        <li>I wish food delivery was cheaper</li>
+                        <li>Skateboarding is a serious sport</li>
+                        <li>I love filming my friends skateboarding</li>
                       </ul>
                     </Typography>
                   }
                   square2={
                     <Typography variant="body2">
                       <Typography variant="body1" fontWeight={700}>
+                        {" "}
                         Thinks
                       </Typography>
                       <ul>
-                        <li>Am I spending too much on food</li>
-                        <li>I wonder what kind of deals this app has</li>
+                        <li>Skateboarding is very competitive</li>
+                        <li>
+                          It’s always worth getting shots of those crazy tricks.{" "}
+                        </li>
                       </ul>
                     </Typography>
                   }
                   square3={
                     <Typography variant="body2">
                       <Typography variant="body1" fontWeight={700}>
+                        {" "}
                         Does
                       </Typography>
                       <ul>
-                        <li>
-                          Send emails and reply to clients in her free time
-                        </li>
-                        <li>Watch food vlogs during her down times</li>
+                        <li>Skate and film at the park with friends </li>
+                        <li>Sign up for film awards</li>
                       </ul>
                     </Typography>
                   }
                   square4={
                     <Typography variant="body2">
                       <Typography variant="body1" fontWeight={700}>
-                        {" "}
                         Feels
                       </Typography>
                       <ul>
-                        <li>Excited</li>
-                        <li>Hungry</li>
-                        <li>Optimistic</li>
+                        <li>
+                          Sad when he doesn’t get the footage he wants to get
+                        </li>
+                        <li>Overjoyed when he’s able to create art</li>
                       </ul>
                     </Typography>
                   }
@@ -358,7 +375,8 @@ export default function Shiba() {
             1. User journey map
           </SectionSubTitle>
           <CustomTable
-            headerColor="#FCAC53"
+            headerColor="#1D1D1D"
+            fontColor="#fff"
             data={{
               headings: [
                 "Action",
@@ -474,7 +492,7 @@ export default function Shiba() {
             <Grid item xs={12} md={5} />
             <Grid item xs={12} md={5} />
             <Grid item xs={12} md={7}>
-              <TextMessage background="#FC0202" isRight>
+              <TextMessage background="#1E88E5" isRight>
                 <Typography variant="body2" sx={{ color: "white" }}>
                   Kendrick is a busy college student who needs a reliable food
                   delivery app, where he could save money the more he orders
@@ -493,7 +511,8 @@ export default function Shiba() {
             statements to define some challenges the users would run into.
           </Typography>
           <CustomTable
-            headerColor="#FCAC53"
+            headerColor="#1D1D1D"
+            fontColor="#fff"
             data={{
               headings: [
                 "",
@@ -745,29 +764,6 @@ export default function Shiba() {
             <SectionSubTitle component="p" my={4}>
               2. User study prep - Writing out the content
             </SectionSubTitle>
-            <Box>
-              <ItemCarousel>
-                {UserStudyPrep.map((item, index) => (
-                  <CarouselCard py={2} px={6} key={index}>
-                    <CarouselCardHeading>
-                      <Typography
-                        variant="body1"
-                        component="p"
-                        color="#FC0202"
-                        fontWeight={700}
-                      >
-                        {item.title}
-                      </Typography>
-                    </CarouselCardHeading>
-                    <CarouselCardContent>
-                      <Typography variant="body1" component="p">
-                        {item.content}
-                      </Typography>
-                    </CarouselCardContent>
-                  </CarouselCard>
-                ))}
-              </ItemCarousel>
-            </Box>
             <SectionSubTitle component="p" my={4}>
               3. Post User study - Collecting data
             </SectionSubTitle>
@@ -920,29 +916,6 @@ export default function Shiba() {
               4. Post User study - Pattern Identification and Prioritized
               insights
             </SectionSubTitle>
-            <Box mb={4}>
-              <ItemCarousel>
-                {PostUserStudy.map((item, index) => (
-                  <CarouselCard py={2} px={6} key={index}>
-                    <CarouselCardHeading>
-                      <Typography
-                        variant="body1"
-                        component="p"
-                        color="#FC0202"
-                        fontWeight={700}
-                      >
-                        {item.title}
-                      </Typography>
-                    </CarouselCardHeading>
-                    <CarouselCardContent>
-                      <Typography variant="body1" component="p">
-                        {item.content}
-                      </Typography>
-                    </CarouselCardContent>
-                  </CarouselCard>
-                ))}
-              </ItemCarousel>
-            </Box>
             <Typography
               variant="body1"
               component="p"
@@ -994,7 +967,7 @@ export default function Shiba() {
               fontWeight={600}
               mb={10}
             >
-              Style guide
+              The final touches for pochui
             </Typography>
             <Typography
               variant="body1"
@@ -1002,24 +975,22 @@ export default function Shiba() {
               textAlign="center"
               mb={10}
             >
-              Since I decided to go with a mascot logo design, I figured it
-              would be best to expirment with a fun color palette. The red and
-              the yellow went well together, and I added in the brown as an
-              accent color to make the logo stand out even more. For the
-              typeface, I wanted to limit myself to only one selection, and see
-              how far I could get with it - It was a bit challenging at times
-              because I felt like the design was missing something but I was
-              happy with the final result.
+              For pochui, I went for a minimalist approach. I used a fun
+              illustration that the target market could relate to and I went
+              with an overly simple color palette to see how well I could design
+              being limited to two colors. Typography wise - Two typefaces,
+              roboto and zona pro. Both look great, straightforward, bold enough
+              to represent pochui :)
             </Typography>
             <StyleGuide
-              logoURL="/images/shiba/shibalogo.png"
+              logoURL="/images/pochui/PochuiLogo2.png"
               logoWidth={824}
               logoHeight={239}
-              color="#FC0202"
-              colors={["#EF3840", "#422100", "#FCAC53", "#FFEDD8"]}
+              color="#325BDE"
+              colors={["#325BDE", "#1D1D1D"]}
               fonts={[
                 {
-                  heading: "H1 - Epilogue",
+                  heading: "H1 - Zona pro",
                   size: "30 pt - Bold",
                   style: {
                     fontWeight: 900,
@@ -1027,7 +998,7 @@ export default function Shiba() {
                   },
                 },
                 {
-                  heading: "H2 - Epilogue",
+                  heading: "H2 - Zona pro",
                   size: "24 pt - Se Bold",
                   style: {
                     fontWeight: 600,
@@ -1035,7 +1006,7 @@ export default function Shiba() {
                   },
                 },
                 {
-                  heading: "H3 - Epilogue",
+                  heading: "H3 - Roboto",
                   size: "14 pt - Regular",
                   style: {
                     fontWeight: 500,
@@ -1055,15 +1026,16 @@ export default function Shiba() {
               fontWeight={600}
               mb={10}
             >
-              Takeaways
+              Final notes
             </Typography>
             <Typography variant="body1" component="p" textAlign="center">
-              Working on Shiba was really fun and rewarding, I got to experiment
-              a lot with figma using auto layout and constraint features. It was
-              a really fun journey working through all the steps from the
-              beginning to the end, and even though I wasn’t able to fully
-              design and incorporate everything I wanted to add, I will most
-              likely visit this project down the line again.
+              Thank you for taking the time to look through this and I hope you
+              enjoyed some of the content above. Working on pochui was a lot of
+              fun, and I decided to experiment with Adobe XD, it was a bit
+              harder to get used to compared to Figma. After a few weeks of hard
+              work I was able to get a solid set of designs down. It may be
+              nowhere near close to a full product launch, but hopefully I can
+              come back to this project one day!
             </Typography>
           </Container>
         </Box>
@@ -1074,56 +1046,53 @@ export default function Shiba() {
 
 const EmpathyMap = ({ title, square1, square2, square3, square4 }) => {
   return (
-    <Box m={2}>
-      <Grid container spacing={2}>
-        <Grid
-          item
-          xs={12}
-          sx={{
-            background: "#FC0202",
-            paddingTop: "0px !important",
-            paddingLeft: "0px !important",
-          }}
+    <Grid container spacing={2}>
+      <Grid
+        item
+        xs={12}
+        sx={{
+          background: "#325BDE",
+          paddingTop: "0px !important",
+          paddingLeft: "0px !important",
+        }}
+      >
+        <Typography
+          p={0.5}
+          variant="body1"
+          component="div"
+          textAlign="center"
+          fontWeight={600}
+          sx={{ color: "#fff" }}
         >
-          <Typography
-            p={0.5}
-            variant="body1"
-            component="div"
-            textAlign="center"
-            fontWeight={600}
-            sx={{ color: "#fff" }}
-          >
-            {title}
-          </Typography>
-        </Grid>
-        <StyledGridSquare item xs={6} p={1}>
-          {square1}
-        </StyledGridSquare>
-        <StyledGridSquare item xs={6} p={1}>
-          {square2}
-        </StyledGridSquare>
-        <StyledGridSquare item xs={6} p={1}>
-          {square3}
-        </StyledGridSquare>
-        <StyledGridSquare item xs={6} p={1}>
-          {square4}
-        </StyledGridSquare>
+          {title}
+        </Typography>
       </Grid>
-    </Box>
+      <StyledGridSquare item xs={6} p={1}>
+        {square1}
+      </StyledGridSquare>
+      <StyledGridSquare item xs={6} p={1}>
+        {square2}
+      </StyledGridSquare>
+      <StyledGridSquare item xs={6} p={1}>
+        {square3}
+      </StyledGridSquare>
+      <StyledGridSquare item xs={6} p={1}>
+        {square4}
+      </StyledGridSquare>
+    </Grid>
   );
 };
 
 const SectionSubTitle = styled(Typography)`
-  font-family: Epilogue;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 16px;
   line-height: 135%;
-  /* or 24px */
+  /* identical to box height, or 30px */
 
   letter-spacing: 0.025em;
 
-  color: rgba(66, 33, 0, 0.75);
+  color: #325bde;
 `;
 
 const TableHeading = styled(Typography)`
@@ -1158,7 +1127,7 @@ const StyledGridSquare = styled(Grid)`
 
 const CarouselCard = styled(Box)`
   position: relative;
-  background-color: #f4f5f6;
+  background-color: #325bde;
   min-height: 350px;
   display: flex;
   flex-direction: column;

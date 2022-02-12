@@ -7,14 +7,19 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-export default function CustomTable({ data, headerColor }) {
+export default function CustomTable({ data, headerColor, fontColor = "#000" }) {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ width: "100%" }} aria-label="simple table">
+      <Table
+        sx={{ width: "100%", minWidth: "800px" }}
+        aria-label="simple table"
+      >
         <TableHead sx={{ background: headerColor }}>
           <TableRow>
             {data.headings.map((item, idx) => (
-              <TableCell key={idx}>{item}</TableCell>
+              <TableCell key={idx} sx={{ color: fontColor }}>
+                {item}
+              </TableCell>
             ))}
           </TableRow>
         </TableHead>
