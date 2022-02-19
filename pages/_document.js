@@ -59,7 +59,7 @@ export default class MyDocument extends Document {
             {`
               #__next {
                 overflow-x: hidden;
-                overflow-y: auto;
+                overflow-y: hidden;
               }
             `}
           </style>
