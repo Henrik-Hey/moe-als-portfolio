@@ -227,7 +227,7 @@ export default function Shiba() {
             2. Empathy Maps
           </SectionSubTitle>
           <Grid container>
-            <Grid item xs={12} md={5.5}>
+            <Grid item xs={12} md={6}>
               <Box>
                 <EmpathyMap
                   title="Kendrick"
@@ -280,8 +280,7 @@ export default function Shiba() {
                 />
               </Box>
             </Grid>
-            <Grid item xs={12} md={1} />
-            <Grid item xs={12} md={5.5}>
+            <Grid item xs={12} md={6}>
               <Box>
                 <EmpathyMap
                   title="Syra Rye"

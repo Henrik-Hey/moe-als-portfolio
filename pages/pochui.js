@@ -238,7 +238,7 @@ export default function Pochui() {
             2. Empathy Maps
           </SectionSubTitle>
           <Grid container>
-            <Grid item xs={12} md={5.5}>
+            <Grid item xs={12} md={6}>
               <Box>
                 <EmpathyMap
                   title="Heona"
@@ -299,8 +299,7 @@ export default function Pochui() {
                 />
               </Box>
             </Grid>
-            <Grid item xs={12} md={1} />
-            <Grid item xs={12} md={5.5}>
+            <Grid item xs={12} md={6}>
               <Box>
                 <EmpathyMap
                   title="Justin"
@@ -1213,40 +1212,42 @@ export default function Pochui() {
 
 const EmpathyMap = ({ title, square1, square2, square3, square4 }) => {
   return (
-    <Grid container spacing={2}>
-      <Grid
-        item
-        xs={12}
-        sx={{
-          background: "#325BDE",
-          paddingTop: "0px !important",
-          paddingLeft: "0px !important",
-        }}
-      >
-        <Typography
-          p={0.5}
-          variant="body1"
-          component="div"
-          textAlign="center"
-          fontWeight={600}
-          sx={{ color: "#fff" }}
+    <Box m={2}>
+      <Grid container spacing={2}>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            background: "#325BDE",
+            paddingTop: "0px !important",
+            paddingLeft: "0px !important",
+          }}
         >
-          {title}
-        </Typography>
+          <Typography
+            p={0.5}
+            variant="body1"
+            component="div"
+            textAlign="center"
+            fontWeight={600}
+            sx={{ color: "#fff" }}
+          >
+            {title}
+          </Typography>
+        </Grid>
+        <StyledGridSquare item xs={6} p={1}>
+          {square1}
+        </StyledGridSquare>
+        <StyledGridSquare item xs={6} p={1}>
+          {square2}
+        </StyledGridSquare>
+        <StyledGridSquare item xs={6} p={1}>
+          {square3}
+        </StyledGridSquare>
+        <StyledGridSquare item xs={6} p={1}>
+          {square4}
+        </StyledGridSquare>
       </Grid>
-      <StyledGridSquare item xs={6} p={1}>
-        {square1}
-      </StyledGridSquare>
-      <StyledGridSquare item xs={6} p={1}>
-        {square2}
-      </StyledGridSquare>
-      <StyledGridSquare item xs={6} p={1}>
-        {square3}
-      </StyledGridSquare>
-      <StyledGridSquare item xs={6} p={1}>
-        {square4}
-      </StyledGridSquare>
-    </Grid>
+    </Box>
   );
 };
 
