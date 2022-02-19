@@ -39,7 +39,12 @@ const NavContainer = ({ position = "absolute", color }) => {
                 </li>
               </DropdownContent>
             </ProjectsDropdown>
-            <NavLink href="#" $color={color}>
+            <NavLink
+              target="_blank"
+              rel="noreferrer"
+              href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d928f593-9bab-3423-b3b2-fd3d1eb0929c"
+              $color={color}
+            >
               Resume
             </NavLink>
             <NavLink href="/about" $color={color}>
