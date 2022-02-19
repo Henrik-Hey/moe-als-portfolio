@@ -6,6 +6,8 @@ import styled from "styled-components";
 const About2Section = () => {
   return (
     <GridSegment
+      contentOrder={{ sm: 2, md: 2 }}
+      imageOrder={{ sm: 1, md: 1 }}
       content={
         <ContentContainer>
           These work samples include logos I did, and some fun illustrations I

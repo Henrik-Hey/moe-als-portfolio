@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Container, Grid } from "@mui/material";
+import Link from "next/link";
+import { Box, Container, Grid, IconButton } from "@mui/material";
+import { ArrowBackIosNew } from "@mui/icons-material";
 import styled from "styled-components";
 
 const Header = ({
@@ -20,7 +22,13 @@ const Header = ({
       <Content>
         <Container maxWidth="md">
           <Box width="100%" minHeight="585px">
-            <Box height="164px"></Box>
+            <Box height="164px" display="flex" alignItems="center">
+              <Link passHref href="/">
+                <IconButton>
+                  <ArrowBackIosNew sx={{ fill: "#fff" }} fontSize="large" />
+                </IconButton>
+              </Link>
+            </Box>
             <Container maxWidth="md">
               <Box
                 width="100%"

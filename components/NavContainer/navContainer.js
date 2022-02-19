@@ -27,13 +27,8 @@ const NavContainer = ({ position = "absolute", color }) => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink href="#" $color={color}>
-                    Apollo
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink href="#" $color={color}>
-                    GoSkate
+                  <NavLink href="/pochui" $color={color}>
+                    Pochui
                   </NavLink>
                 </li>
               </DropdownContent>
@@ -52,12 +47,16 @@ const NavContainer = ({ position = "absolute", color }) => {
 };
 
 const NavContent = styled.div`
-  position: ${(props) => props.$position};
+  position: relative;
   top: 0px;
   left: 0px;
   width: 100vw;
   min-height: 130px;
   z-index: 1;
+
+  ${({ theme }) => theme.breakpoints.up("sm")} {
+    position: ${(props) => props.$position};
+  }
 `;
 
 const LogoContainer = styled.div`

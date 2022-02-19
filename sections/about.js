@@ -55,6 +55,7 @@ const AboutSection = () => {
 const ImageContainer = styled.div`
   height: 100%;
   width: 100%;
+  min-height: 500px;
 `;
 
 const ContentContainer = styled.div`

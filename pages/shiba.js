@@ -1195,17 +1195,6 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
   }
 
-  #__next {
-    position: relative;
-    background: #F8F9FB;
-    width: 100vw;
-    height: 100vh;
-    height: -moz-fit-content;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
 `;

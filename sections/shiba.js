@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import GridSegment from "../components/Grid/GridSegment";
 import ProjectBrief from "../components/ProjectBrief/ProjectBrief";
@@ -7,6 +8,9 @@ import styled from "styled-components";
 const Shiba = () => {
   return (
     <GridSegment
+      title="PRO 1 - SHIBA"
+      contentOrder={{ sm: 2, md: 1 }}
+      imageOrder={{ sm: 1, md: 2 }}
       content={
         <>
           <ProjectBrief
@@ -27,6 +31,7 @@ const Shiba = () => {
             }
             timeline="4 weeks"
             roles="Ux researcher, Visual designer"
+            projectURL="/shiba"
           />
         </>
       }
@@ -35,7 +40,7 @@ const Shiba = () => {
           <Image
             layout="fill"
             objectFit="cover"
-            src={"/images/Shiba1.png"}
+            src={"/images/shiba/shibaproject.png"}
             alt="Image of shiba inu app"
           />
         </ImageContainer>

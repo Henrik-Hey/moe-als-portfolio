@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import Typewriter from "../components/Typewriter/Typewriter";
 
 const Intro = () => {
   return (
@@ -10,7 +11,17 @@ const Intro = () => {
         <b>designer</b> based in Canada.
       </IntroText1>
       <IntroText2>
-        I’m passionate about <b>User Experience</b>
+        I’m passionate about{" "}
+        <b>
+          <Typewriter
+            contents={[
+              "User experience",
+              "Visual design",
+              "designing for accessibility",
+            ]}
+          />
+        </b>
+        .
       </IntroText2>
       <ButtonContainer>
         <Button1>Resume</Button1>
@@ -79,6 +90,7 @@ const Button1 = styled.button`
   text-align: center;
   padding: 10px;
   cursor: pointer;
+  margin: 8px 0px;
 
   &:hover {
   }
@@ -98,6 +110,7 @@ const Button2 = styled.button`
   text-align: center;
   padding: 10px;
   cursor: pointer;
+  margin: 8px 0px;
 
   &:hover {
   }

@@ -27,7 +27,7 @@ export default function Pochui() {
       />
       <Box my={10}>
         <Container maxWidth="md">
-          <Typography
+          <SectionHeading
             variant="h3"
             component="h1"
             textAlign="center"
@@ -35,7 +35,7 @@ export default function Pochui() {
             mb={10}
           >
             Goals and Challenges
-          </Typography>
+          </SectionHeading>
           <Grid container>
             <Grid item xs={12} md={5}>
               <Typography component="p" mb={3}>
@@ -80,7 +80,7 @@ export default function Pochui() {
       </Box>
       <DarkGrey py={10}>
         <Container maxWidth="md">
-          <Typography
+          <SectionHeading
             variant="h3"
             component="h2"
             textAlign="center"
@@ -88,7 +88,7 @@ export default function Pochui() {
             mb={10}
           >
             Understanding users
-          </Typography>
+          </SectionHeading>
           <Typography variant="body1" component="p" textAlign="center" mb={10}>
             Much like my previous project - shiba, I had to ask myself a lot of
             questions to make sure this was heading in the right direction. I
@@ -584,7 +584,7 @@ export default function Pochui() {
       </DarkGrey>
       <Box my={10}>
         <Container maxWidth="md">
-          <Typography
+          <SectionHeading
             variant="h3"
             component="h1"
             textAlign="center"
@@ -592,7 +592,7 @@ export default function Pochui() {
             mb={10}
           >
             Breaking down the problems we might face
-          </Typography>
+          </SectionHeading>
           <Typography variant="body1" component="p" textAlign="center" mb={10}>
             Defining potential user problems is a very important step - I took
             my time applying the research from the previous stage to create
@@ -703,7 +703,7 @@ export default function Pochui() {
       </Box>
       <DarkGrey pt={10}>
         <Container maxWidth="md">
-          <Typography
+          <SectionHeading
             variant="h3"
             component="h1"
             textAlign="center"
@@ -711,7 +711,7 @@ export default function Pochui() {
             mb={10}
           >
             Coming up with the gameplan
-          </Typography>
+          </SectionHeading>
           <Typography variant="body1" component="p" textAlign="center" mb={10}>
             Game plans are important, and for this project I needed one to make
             sure that I’m designing and thinking of the right content for the
@@ -875,7 +875,7 @@ export default function Pochui() {
       </DarkGrey>
       <Box my={10}>
         <Container maxWidth="md">
-          <Typography
+          <SectionHeading
             variant="h3"
             component="h1"
             textAlign="center"
@@ -883,7 +883,7 @@ export default function Pochui() {
             mb={10}
           >
             Doing the tests and making it pretty
-          </Typography>
+          </SectionHeading>
           <Typography variant="body1" component="p" textAlign="center">
             Using the information from the previous stage, I was able to move
             into the user testing stage within a reasonable amount of time. I
@@ -1115,7 +1115,7 @@ export default function Pochui() {
         </Box>
         <DarkGrey py={10}>
           <Container maxWidth="md">
-            <Typography
+            <SectionHeading
               variant="h3"
               component="h1"
               textAlign="center"
@@ -1123,7 +1123,7 @@ export default function Pochui() {
               mb={10}
             >
               The final touches for pochui
-            </Typography>
+            </SectionHeading>
             <Typography
               variant="body1"
               component="p"
@@ -1148,8 +1148,8 @@ export default function Pochui() {
                   heading: "H1 - Zona pro",
                   size: "30 pt - Bold",
                   style: {
-                    fontWeight: 900,
-                    fontFamily: "Epilogue",
+                    fontWeight: "bold",
+                    fontFamily: "ZonaPro",
                   },
                 },
                 {
@@ -1157,7 +1157,7 @@ export default function Pochui() {
                   size: "24 pt - Se Bold",
                   style: {
                     fontWeight: 600,
-                    fontFamily: "Epilogue",
+                    fontFamily: "ZonaPro",
                   },
                 },
                 {
@@ -1165,7 +1165,7 @@ export default function Pochui() {
                   size: "14 pt - Regular",
                   style: {
                     fontWeight: 500,
-                    fontFamily: "Epilogue",
+                    fontFamily: "Roboto",
                   },
                 },
               ]}
@@ -1174,7 +1174,7 @@ export default function Pochui() {
         </DarkGrey>
         <Box my={10}>
           <Container maxWidth="md">
-            <Typography
+            <SectionHeading
               variant="h3"
               component="h1"
               textAlign="center"
@@ -1182,7 +1182,7 @@ export default function Pochui() {
               mb={10}
             >
               Final notes
-            </Typography>
+            </SectionHeading>
             <Typography variant="body1" component="p" textAlign="center">
               Thank you for taking the time to look through this and I hope you
               enjoyed some of the content above. Working on pochui was a lot of
@@ -1238,7 +1238,13 @@ const EmpathyMap = ({ title, square1, square2, square3, square4 }) => {
   );
 };
 
+const SectionHeading = styled(Typography)`
+  font-family: ZonaPro;
+  font-weight: bold;
+`;
+
 const SectionSubTitle = styled(Typography)`
+  font-family: ZonaPro;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1321,17 +1327,16 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
   }
 
-  #__next {
-    position: relative;
-    background: #F8F9FB;
-    width: 100vw;
-    height: 100vh;
-    height: -moz-fit-content;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+  @font-face {
+    font-family: ZonaPro;
+    src: url("fonts/zona/ZonaPro-Regular.otf") format("opentype");
+  }
+
+  @font-face {
+      font-family: ZonaPro;
+      font-weight: bold;
+      src: url("fonts/zona/ZonaPro-Bold.otf") format("opentype");
   }
 `;
