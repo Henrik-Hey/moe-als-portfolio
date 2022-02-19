@@ -28,6 +28,7 @@ const About2Section = () => {
           {new Array(12).fill(0).map((_, i) => (
             <ImageBox key={i}>
               <Image
+                priority
                 layout="fill"
                 objectFit="cover"
                 src={`/images/about2/${i + 1}.png`}

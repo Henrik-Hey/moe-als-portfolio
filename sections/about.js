@@ -41,6 +41,7 @@ const AboutSection = () => {
       image={
         <ImageContainer>
           <Image
+            priority
             layout="fill"
             objectFit="cover"
             src={"/images/thelegend.png"}

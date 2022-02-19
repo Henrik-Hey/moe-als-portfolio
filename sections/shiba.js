@@ -38,6 +38,7 @@ const Shiba = () => {
       image={
         <ImageContainer>
           <Image
+            priority
             layout="fill"
             objectFit="cover"
             src={"/images/shiba/shibaproject.png"}

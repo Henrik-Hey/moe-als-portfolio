@@ -35,6 +35,7 @@ const Pochui = () => {
       image={
         <ImageContainer>
           <Image
+            priority
             layout="fill"
             objectFit="cover"
             src={"/images/pochui/pochuiproject.png"}

@@ -9,7 +9,13 @@ const NavContainer = ({ position = "absolute", color }) => {
   return (
     <NavContent $position={position}>
       <LogoContainer>
-        <Image src="/images/logo.svg" alt="Logo" width={80} height={80} />
+        <Image
+          priority
+          src="/images/logo.svg"
+          alt="Logo"
+          width={80}
+          height={80}
+        />
       </LogoContainer>
       {isDesktop && (
         <>

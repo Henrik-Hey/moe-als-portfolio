@@ -8,6 +8,7 @@ import TextMessage from "../components/TextMessage/TextMessage";
 import StickyNote from "../components/StickyNote/StickyNote";
 import ItemCarousel from "../components/Carousel/Carousel";
 import StyleGuide from "../components/StyleGuide/StyleGuide";
+import Footer from "../components/Footer/Footer";
 import styled from "styled-components";
 
 import UserStudyPrep from "../data/pochui/UserStudyPrep";
@@ -106,6 +107,7 @@ export default function Pochui() {
               <Box display="flex" mb={4}>
                 <Box position="relative">
                   <Image
+                    priority
                     src="/images/pochui/heona.png"
                     alt="Picture of Heona Fulley"
                     layout="intrinsic"
@@ -171,6 +173,7 @@ export default function Pochui() {
               <Box display="flex" mb={4}>
                 <Box position="relative">
                   <Image
+                    priority
                     src="/images/pochui/justin.png"
                     alt="Picture of Justin Sang"
                     layout="intrinsic"
@@ -809,6 +812,7 @@ export default function Pochui() {
           </Typography>
           <Box my={10}>
             <Image
+              priority
               src="/images/pochui/prioritizationplan.png"
               alt="Picture of the prioritization plan"
               layout="responsive"
@@ -825,6 +829,7 @@ export default function Pochui() {
             <Box my={10}>
               <ItemCarousel>
                 <Image
+                  priority
                   src="/images/pochui/paper1.png"
                   alt=""
                   layout="responsive"
@@ -832,6 +837,7 @@ export default function Pochui() {
                   height="958"
                 />
                 <Image
+                  priority
                   src="/images/pochui/paper2.png"
                   alt=""
                   layout="responsive"
@@ -839,6 +845,7 @@ export default function Pochui() {
                   height="885"
                 />
                 <Image
+                  priority
                   src="/images/pochui/paper3.png"
                   alt=""
                   layout="responsive"
@@ -856,6 +863,7 @@ export default function Pochui() {
           <Box my={10}>
             <ItemCarousel>
               <Image
+                priority
                 src="/images/pochui/wireframe1.png"
                 alt=""
                 layout="responsive"
@@ -863,6 +871,7 @@ export default function Pochui() {
                 height="1093"
               />
               <Image
+                priority
                 src="/images/pochui/wireframe2.png"
                 alt=""
                 layout="responsive"
@@ -1093,6 +1102,7 @@ export default function Pochui() {
             </Typography>
             <Box my={4}>
               <Image
+                priority
                 src="/images/pochui/pochui1.png"
                 alt=""
                 role="presentation"
@@ -1103,6 +1113,7 @@ export default function Pochui() {
             </Box>
             <Box my={4}>
               <Image
+                priority
                 src="/images/pochui/pochui2.png"
                 alt=""
                 role="presentation"
@@ -1195,6 +1206,7 @@ export default function Pochui() {
           </Container>
         </Box>
       </Box>
+      <Footer backgroundColor="#325BDE" />
     </>
   );
 }
@@ -1257,19 +1269,19 @@ const SectionSubTitle = styled(Typography)`
 `;
 
 const TableHeading = styled(Typography)`
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 600 !important;
+  font-size: 12px !important;
 `;
 
 const GreyText = styled(Typography)`
-  font-weight: 300;
-  color: #232323;
-  font-size: 12px;
+  font-weight: 300 !important;
+  color: #232323 !important;
+  font-size: 12px !important;
 `;
 
 const StickyNoteText = styled(Typography)`
-  font-weight: 300;
-  font-size: 12px;
+  font-weight: 300 !important;
+  font-size: 12px !important;
 `;
 
 const DarkGrey = styled(Box)`

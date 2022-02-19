@@ -24,7 +24,16 @@ const Intro = () => {
         .
       </IntroText2>
       <ButtonContainer>
-        <Button1>Resume</Button1>
+        <Button1
+          onCLick={() => {
+            window.open(
+              "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d928f593-9bab-3423-b3b2-fd3d1eb0929c",
+              "_blank"
+            );
+          }}
+        >
+          Resume
+        </Button1>
         <Link href="/about" passHref>
           <Button2>About me</Button2>
         </Link>

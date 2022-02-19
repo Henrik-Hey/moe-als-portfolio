@@ -8,6 +8,7 @@ import TextMessage from "../components/TextMessage/TextMessage";
 import StickyNote from "../components/StickyNote/StickyNote";
 import StyleGuide from "../components/StyleGuide/StyleGuide";
 import ItemCarousel from "../components/Carousel/Carousel";
+import Footer from "../components/Footer/Footer";
 import styled from "styled-components";
 
 import UserStudyPrep from "../data/shiba/UserStudyPrep";
@@ -115,6 +116,7 @@ export default function Shiba() {
               <Box display="flex" my={4}>
                 <Box position="relative">
                   <Image
+                    priority
                     src="/images/shiba/KendrickHey.png"
                     alt="Picture of Kendrick Hey"
                     layout="intrinsic"
@@ -169,6 +171,7 @@ export default function Shiba() {
               <Box display="flex" my={4}>
                 <Box position="relative">
                   <Image
+                    priority
                     src="/images/shiba/SyraRye.png"
                     alt="Picture of Kendrick Hey"
                     layout="intrinsic"
@@ -643,6 +646,7 @@ export default function Shiba() {
           </SectionSubTitle>
           <Box my={10}>
             <Image
+              priority
               src="/images/shiba/architecture.png"
               alt="Picture of the information architecture"
               layout="responsive"
@@ -663,6 +667,7 @@ export default function Shiba() {
         <WhiteBackdrop my={10}>
           <Container maxWidth="md">
             <Image
+              priority
               src="/images/shiba/paperwireframes.png"
               alt="Picture of the information architecture"
               layout="responsive"
@@ -677,6 +682,7 @@ export default function Shiba() {
           </SectionSubTitle>
           <Box my={10}>
             <Image
+              priority
               src="/images/shiba/digitalwireframes.png"
               alt="Picture of the information architecture"
               layout="responsive"
@@ -693,6 +699,7 @@ export default function Shiba() {
         <WhiteBackdrop my={10}>
           <Container maxWidth="md">
             <Image
+              priority
               src="/images/shiba/paperlogo.png"
               alt="Picture of the information architecture"
               layout="responsive"
@@ -732,6 +739,7 @@ export default function Shiba() {
         <DarkGrey py={4}>
           <Container maxWidth="md">
             <Image
+              priority
               src="/images/shiba/wireflow.png"
               alt="Picture of the information architecture"
               layout="responsive"
@@ -957,6 +965,7 @@ export default function Shiba() {
             </Typography>
             <Box mb={4}>
               <Image
+                priority
                 src="/images/shiba/shibapresentation.png"
                 alt=""
                 role="presentation"
@@ -967,6 +976,7 @@ export default function Shiba() {
             </Box>
             <Box my={4}>
               <Image
+                priority
                 src="/images/shiba/shibaloginsignup.png"
                 alt="Picture of the shibas login and signup screens"
                 layout="responsive"
@@ -976,6 +986,7 @@ export default function Shiba() {
             </Box>
             <Box my={4}>
               <Image
+                priority
                 src="/images/shiba/shibaapp.png"
                 alt="Picture of the shiba app"
                 layout="responsive"
@@ -1068,6 +1079,7 @@ export default function Shiba() {
           </Container>
         </Box>
       </Box>
+      <Footer backgroundColor="#EF3840" />
     </>
   );
 }
@@ -1127,19 +1139,19 @@ const SectionSubTitle = styled(Typography)`
 `;
 
 const TableHeading = styled(Typography)`
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 600 !important;
+  font-size: 12px !important;
 `;
 
 const GreyText = styled(Typography)`
-  font-weight: 300;
-  color: #232323;
-  font-size: 12px;
+  font-weight: 300 !important;
+  color: #232323 !important;
+  font-size: 12px !important;
 `;
 
 const StickyNoteText = styled(Typography)`
-  font-weight: 300;
-  font-size: 12px;
+  font-weight: 300 !important;
+  font-size: 12px !important;
 `;
 
 const DarkGrey = styled(Box)`
