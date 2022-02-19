@@ -10,8 +10,8 @@ import StyleGuide from "../components/StyleGuide/StyleGuide";
 import ItemCarousel from "../components/Carousel/Carousel";
 import styled from "styled-components";
 
-import UserStudyPrep from "../data/UserStudyPrep";
-import PostUserStudy from "../data/PostUserStudy";
+import UserStudyPrep from "../data/shiba/UserStudyPrep";
+import PostUserStudy from "../data/shiba/PostUserStudy";
 
 export default function Shiba() {
   return (
@@ -760,7 +760,7 @@ export default function Shiba() {
                       </Typography>
                     </CarouselCardHeading>
                     <CarouselCardContent>
-                      <Typography variant="body1" component="p">
+                      <Typography variant="body2" component="p">
                         {item.content}
                       </Typography>
                     </CarouselCardContent>
@@ -935,7 +935,7 @@ export default function Shiba() {
                       </Typography>
                     </CarouselCardHeading>
                     <CarouselCardContent>
-                      <Typography variant="body1" component="p">
+                      <Typography variant="body2" component="p">
                         {item.content}
                       </Typography>
                     </CarouselCardContent>
@@ -1166,7 +1166,7 @@ const CarouselCard = styled(Box)`
 
   ${({ theme }) => theme.breakpoints.up("sm")} {
     flex-direction: row;
-    min-height: 200px;
+    min-height: 180px;
   }
 `;
 

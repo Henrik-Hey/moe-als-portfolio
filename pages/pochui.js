@@ -10,6 +10,9 @@ import ItemCarousel from "../components/Carousel/Carousel";
 import StyleGuide from "../components/StyleGuide/StyleGuide";
 import styled from "styled-components";
 
+import UserStudyPrep from "../data/pochui/UserStudyPrep";
+import PostUserStudy from "../data/pochui/PostUserStudy";
+
 export default function Pochui() {
   return (
     <>
@@ -352,6 +355,231 @@ export default function Pochui() {
               </Box>
             </Grid>
           </Grid>
+          <SectionSubTitle component="p" my={4}>
+            3. User Journey map (Justin)
+          </SectionSubTitle>
+          <Typography variant="body1" component="p" mb={4}>
+            There are two Journey maps created for this project. #1 is for
+            Justin - His goal is to create and upload a skate deck artwork to
+            later on make commission profits from selling it to his followers.
+          </Typography>
+          <CustomTable
+            headerColor="#1D1D1D"
+            fontColor="#fff"
+            data={{
+              headings: [
+                "Action",
+                "Look at local inspiration",
+                "Modify and fit the created art piece",
+                "Upload and publish the artwork",
+                "Receive orders and fulfill commissions",
+                "Send commissions to customers",
+              ],
+              rows: [
+                [
+                  <TableHeading key={-1}>Task List</TableHeading>,
+                  <GreyText key={0}>
+                    &gt; Open up website
+                    <br /> &gt; Look at the homepage features
+                    <br />
+                    &gt; Favorite, and add pieces to mood board
+                  </GreyText>,
+                  <GreyText key={1}>
+                    &gt; Open up upload tool
+                    <br />
+                    &gt; Fit and resize artwork
+                    <br /> &gt; Confirm sizes and fitting, move to next step
+                  </GreyText>,
+                  <GreyText key={2}>
+                    &gt; Confirm artwork and set price
+                    <br /> &gt; Upload and publish
+                    <br />
+                    &gt; Await orders and commissions
+                  </GreyText>,
+                  <GreyText key={3}>
+                    &gt; Receive message stating customer order
+                    <br /> &gt; Confirm order
+                    <br /> &gt; Receive commission timeline and payment
+                  </GreyText>,
+                  <GreyText key={4}>
+                    &gt; upload commission to customer
+                    <br />
+                    &gt; read customer comments
+                  </GreyText>,
+                ],
+                [
+                  <TableHeading key={-1}>Feeling Adjective</TableHeading>,
+                  <GreyText key={0}>
+                    &gt; Anxious
+                    <br />
+                    &gt; Excited
+                    <br />
+                    &gt; Hopeful
+                  </GreyText>,
+                  <GreyText key={1}>
+                    &gt; Confused
+                    <br />
+                    &gt; Hopeful
+                    <br />
+                    &gt; Anxious
+                  </GreyText>,
+                  <GreyText key={2}>
+                    &gt; Excited
+                    <br />
+                    &gt; Worried
+                    <br />
+                    &gt; Anxious
+                  </GreyText>,
+                  <GreyText key={3}>
+                    &gt; Happy
+                    <br />
+                    &gt; Overjoyed
+                    <br />
+                    &gt; Excited
+                  </GreyText>,
+                  <GreyText key={4}>
+                    &gt; Happy
+                    <br />
+                    &gt; Hopeful
+                    <br />
+                    &gt; Excited
+                  </GreyText>,
+                ],
+                [
+                  <TableHeading key={-1}>
+                    Improvement opportunities
+                  </TableHeading>,
+                  <GreyText key={0}>
+                    &gt; Make the initial home screen welcoming. it’s important
+                    to prompt users to create an account before viewing content.
+                  </GreyText>,
+                  <GreyText key={1}>
+                    &gt; Maybe offer some sort of tutorial to explain the
+                    interface if needed.
+                  </GreyText>,
+                  <GreyText key={2}>
+                    &gt; Showcase price ranges to help artists decide
+                    <br />
+                    &gt; Also showcase all fees that the customer will see once
+                    they order
+                  </GreyText>,
+                  <GreyText key={3}>
+                    &gt; There should be a dashboard showing all orders.
+                  </GreyText>,
+                  <GreyText key={4}>
+                    &gt; Commission info should be available in a separate tab.
+                  </GreyText>,
+                ],
+              ],
+            }}
+          />
+          <SectionSubTitle component="p" my={4}>
+            3. User Journey map (Heona)
+          </SectionSubTitle>
+          <Typography variant="body1" component="p" mb={4}>
+            There are two Journey maps created for this project, #2 is for Heona
+            - Her goal is to create an influencer account to interact with
+            friends, add collections, and make her first post.
+          </Typography>
+          <CustomTable
+            headerColor="#1D1D1D"
+            fontColor="#fff"
+            data={{
+              headings: [
+                "Action",
+                "First steps - Initial reading",
+                "Create an account",
+                "Exlpore the interface",
+                "Plan first post",
+              ],
+              rows: [
+                [
+                  <TableHeading key={-1}>Task List</TableHeading>,
+                  <GreyText key={0}>
+                    &gt; Open up website
+                    <br />
+                    &gt; Scroll through elements and read about service
+                    <br />
+                    &gt; Go to the sign up page and begin
+                  </GreyText>,
+                  <GreyText key={1}>
+                    &gt; Fill in personal information
+                    <br />
+                    &gt; Select membership type
+                    <br />
+                    &gt; Confirm account and start using it
+                  </GreyText>,
+                  <GreyText key={2}>
+                    &gt; See all the features available to use
+                    <br />
+                    &gt; Explore dashboard and feature page
+                    <br />
+                    &gt; Search users and inspo
+                  </GreyText>,
+                  <GreyText key={3}>
+                    &gt; like user posts, follow accounts and friends
+                    <br />
+                    &gt; Set moodboards and inspo collections
+                    <br />
+                    &gt; Upload content
+                  </GreyText>,
+                ],
+                [
+                  <TableHeading key={-1}>Feeling Adjective</TableHeading>,
+                  <GreyText key={0}>
+                    &gt; Anxious
+                    <br />
+                    &gt; Excited
+                    <br />
+                    &gt; Hopeful
+                  </GreyText>,
+                  <GreyText key={1}>
+                    &gt; Confused
+                    <br />
+                    &gt; Hopeful
+                    <br />
+                    &gt; Anxious
+                  </GreyText>,
+                  <GreyText key={2}>
+                    &gt; Excited
+                    <br />
+                    &gt; Worried
+                    <br />
+                    &gt; Anxious
+                  </GreyText>,
+                  <GreyText key={3}>
+                    &gt; Happy
+                    <br />
+                    &gt; Overjoyed
+                    <br />
+                    &gt; Excited
+                  </GreyText>,
+                ],
+                [
+                  <TableHeading key={-1}>
+                    Improvement opportunities
+                  </TableHeading>,
+                  <GreyText key={0}>
+                    &gt; Make the initial home screen welcoming. it’s important
+                    to prompt users to create an account before viewing content{" "}
+                  </GreyText>,
+                  <GreyText key={1}>
+                    &gt; Maybe offer some sort of tutorial to explain the
+                    interface if needed.
+                  </GreyText>,
+                  <GreyText key={2}>
+                    &gt; Showcase price ranges to help artists decide
+                    <br />
+                    &gt; Also showcase all fees that the customer will see once
+                    they order
+                  </GreyText>,
+                  <GreyText key={3}>
+                    &gt; There should be a dashboard showing all orders.
+                  </GreyText>,
+                ],
+              ],
+            }}
+          />
         </Container>
       </DarkGrey>
       <Box my={10}>
@@ -363,152 +591,63 @@ export default function Pochui() {
             fontWeight={600}
             mb={10}
           >
-            Define
+            Breaking down the problems we might face
           </Typography>
           <Typography variant="body1" component="p" textAlign="center" mb={10}>
-            This stage was very important to do right in order to understand
-            what problems the future user might face, and how they could be
-            avoided. I started by making some user journey maps and problem
-            statements to define some challenges the users would run into.
+            Defining potential user problems is a very important step - I took
+            my time applying the research from the previous stage to create
+            scenarios and problem statements in hopes of being able to see
+            things from the perspective of the user. This does not guarantee
+            perfection, but it’s a step in the right direction to ensure user
+            testing goes smoothly in the later stages.
           </Typography>
           <SectionSubTitle component="p" my={4}>
-            1. User journey map
-          </SectionSubTitle>
-          <CustomTable
-            headerColor="#1D1D1D"
-            fontColor="#fff"
-            data={{
-              headings: [
-                "Action",
-                "Downloading and launching app",
-                "Making an account",
-                "Browsing for food and checking out",
-                "Payment information and address",
-                "Confirmation & Delivery wait time",
-              ],
-              rows: [
-                [
-                  <TableHeading key={-1}>Task List</TableHeading>,
-                  <GreyText key={0}>
-                    &gt; Search for app
-                    <br /> &gt; Download the app on correct platform
-                    <br /> &gt; Launch
-                  </GreyText>,
-                  <GreyText key={1}>
-                    &gt; Sign in options
-                    <br /> &gt; Confirm and create account
-                    <br /> &gt; Confirm Email
-                    <br /> &gt; Use application
-                  </GreyText>,
-                  <GreyText key={2}>
-                    &gt; Browse restaurants
-                    <br /> &gt; Choose restaurant and browse menu
-                    <br /> &gt; Add items to cart
-                    <br /> &gt; Check out
-                  </GreyText>,
-                  <GreyText key={3}>
-                    &gt; Browse payment options
-                    <br /> &gt; Select payment method
-                    <br /> &gt; Check subscription option and perks
-                    <br /> &gt; Pay and tip
-                  </GreyText>,
-                  <GreyText key={4}>
-                    &gt; Recieve confirmation email <br /> &gt; Check tracking
-                    map, wait for order <br /> &gt; Receive order and leave a
-                    rating
-                  </GreyText>,
-                ],
-                [
-                  <TableHeading key={-1}>Feeling Adjective</TableHeading>,
-                  <GreyText key={0}>
-                    &gt; Looking forwards to trying out the food
-                    <br /> &gt; Curious about experience
-                  </GreyText>,
-                  <GreyText key={1}>
-                    &gt; Looking forwards to making an account
-                    <br /> &gt; Unsure of what to come
-                  </GreyText>,
-                  <GreyText key={2}>
-                    &gt; Frustrated at lack of category sorting options
-                    <br /> &gt; Happy with overall interface and colors
-                  </GreyText>,
-                  <GreyText key={3}>
-                    &gt; Frustrated because subscription option wasn’t offered
-                    sooner
-                    <br /> &gt; Anxious to place order due to lack of reviews
-                  </GreyText>,
-                  <GreyText key={4}>
-                    &gt; Patiently waiting for food
-                    <br /> &gt; Anxious due lack of updates
-                    <br /> &gt; Excited to eat
-                  </GreyText>,
-                ],
-                [
-                  <TableHeading key={-1}>
-                    Improvement opportunities
-                  </TableHeading>,
-                  <GreyText key={0}>
-                    &gt; Offer a light version of the app
-                    <br /> &gt; Make sure app is available for both android and
-                    apple
-                  </GreyText>,
-                  <GreyText key={1}>
-                    &gt; Option to continue as a guest should be available
-                    <br /> &gt; Sign in partners could help w/ accessibility
-                  </GreyText>,
-                  <GreyText key={2}>
-                    &gt; Buttons at the top of the screen that list categories
-                    <br /> &gt; Make the food items visual w/ pictures and gifs
-                  </GreyText>,
-                  <GreyText key={3}>
-                    &gt; Offer different kinds of payment options
-                    <br /> &gt; Need to introduce a subscribe & save system
-                    sooner
-                    <br /> &gt; Add intractability from user to user. Ex;
-                    ratings
-                  </GreyText>,
-                  <GreyText key={4}>
-                    &gt; Option to enable push alerts should be available but
-                    not mandatory
-                    <br /> &gt; Option to leave a review
-                  </GreyText>,
-                ],
-              ],
-            }}
-          />
-          <SectionSubTitle component="p" my={4}>
-            2. Problem statements
+            1. Problem statements
           </SectionSubTitle>
           <Grid container>
             <Grid item xs={12} md={7}>
-              <TextMessage background="#000">
+              <TextMessage background="#325BDE">
                 <Typography variant="body2" sx={{ color: "white" }}>
-                  Kendrick is a busy college student who needs a reliable food
-                  delivery app, where he could save money the more he orders
-                  because he doesn’t have time to cook often.
+                  Justin is a passionate artist who needs an application where
+                  he can sell, upload, and share his board designs and videos
+                  because, he wants to make a living off it.
                 </Typography>
               </TextMessage>
             </Grid>
             <Grid item xs={12} md={5} />
-            <Grid item xs={12} md={5} />
             <Grid item xs={12} md={7}>
-              <TextMessage background="#1E88E5" isRight>
+              <TextMessage background="#325BDE">
                 <Typography variant="body2" sx={{ color: "white" }}>
-                  Kendrick is a busy college student who needs a reliable food
-                  delivery app, where he could save money the more he orders
-                  because he doesn’t have time to cook often.
+                  Heona is a university student who needs a social platform to
+                  meet like-minded skateboarding enthusiasts because she wants
+                  to make more friends with similar hobbies.
+                </Typography>
+              </TextMessage>
+            </Grid>
+            <Grid item xs={12} md={5} />
+            <Grid item xs={12} md={9} />
+            <Grid item xs={12} md={3}>
+              <TextMessage background="#d7d8da" isRight>
+                <Typography
+                  variant="body1"
+                  sx={{ color: "#000" }}
+                  textAlign="center"
+                >
+                  ● ● ●
                 </Typography>
               </TextMessage>
             </Grid>
           </Grid>
           <SectionSubTitle component="p" my={4}>
-            3. Competitive audit
+            2. Competitive audit breakdown
           </SectionSubTitle>
           <Typography variant="body1" component="p" textAlign="center" mb={10}>
-            This stage was very important to do right in order to understand
-            what problems the future user might face, and how they could be
-            avoided. I started by making some user journey maps and problem
-            statements to define some challenges the users would run into.
+            Understanding who our competition is gives us a lot of insight on
+            what we need to do, what we need to avoid, and it really sets the
+            parameters for how deep this project will go. I took my time with
+            this step because it was relatively difficult finding competition
+            for this service provided. but after a few nights I had a complete
+            competitive audit, and audit report, complete!
           </Typography>
           <CustomTable
             headerColor="#1D1D1D"
@@ -516,28 +655,28 @@ export default function Pochui() {
             data={{
               headings: [
                 "",
-                "Doordash",
-                "Ubereats",
-                "Cori korean Restaurant",
-                "Miku Japanese Grill",
+                "LOKE: Skateboards",
+                "Shreddit: Skateboarding",
+                "Braille",
+                "Pochui",
               ],
               rows: [
                 [
-                  <TableHeading key={-1}>Subscription savings</TableHeading>,
-                  "●",
-                  "●",
+                  <TableHeading key={-1}>Membership benefits</TableHeading>,
                   "○",
                   "○",
-                ],
-                [
-                  <TableHeading key={-1}>Delivery tracking</TableHeading>,
                   "●",
-                  "●",
-                  "○",
                   "●",
                 ],
                 [
-                  <TableHeading key={-1}>Only One Cuisine</TableHeading>,
+                  <TableHeading key={-1}>Unique account types</TableHeading>,
+                  "○",
+                  "○",
+                  "○",
+                  "●",
+                ],
+                [
+                  <TableHeading key={-1}>Social community</TableHeading>,
                   "○",
                   "○",
                   "●",
@@ -546,16 +685,16 @@ export default function Pochui() {
                 [
                   <TableHeading key={-1}>Modern UI/UX</TableHeading>,
                   "●",
+                  "○",
                   "●",
-                  "○",
-                  "○",
+                  "●",
                 ],
                 [
-                  <TableHeading key={-1}>Rewards</TableHeading>,
-                  "●",
-                  "●",
-                  "●",
+                  <TableHeading key={-1}>Marketing tools</TableHeading>,
                   "○",
+                  "○",
+                  "○",
+                  "●",
                 ],
               ],
             }}
@@ -571,16 +710,17 @@ export default function Pochui() {
             fontWeight={600}
             mb={10}
           >
-            Ideate
+            Coming up with the gameplan
           </Typography>
           <Typography variant="body1" component="p" textAlign="center" mb={10}>
-            After completing my previous research, I decided to look more into
-            user problems and solutions by doing a few more exercises. I created
-            a few ‘how might we’ statements, and I followed that up by creating
-            the site’s information architecture.
+            Game plans are important, and for this project I needed one to make
+            sure that I’m designing and thinking of the right content for the
+            upcoming user testing trials. I started with basic ‘how might we
+            statments’questions, created a prioritization plan, and then moved
+            on to the drawing board.
           </Typography>
           <SectionSubTitle component="p" my={4}>
-            1. How might we statements
+            1. &apos;How might we&apos; statements
           </SectionSubTitle>
           <Grid container columns={10}>
             <Grid item xs={5} md={2}>
@@ -592,7 +732,7 @@ export default function Pochui() {
               </StickyNote>
             </Grid>
             <Grid item xs={5} md={2}>
-              <StickyNote background="#A7FFAB">
+              <StickyNote background="#FFF8A7">
                 <StickyNoteText>
                   How might we create a way to book food for dine-ins instead of
                   delivery?
@@ -600,7 +740,7 @@ export default function Pochui() {
               </StickyNote>
             </Grid>
             <Grid item xs={5} md={2}>
-              <StickyNote background="#A7FFEF">
+              <StickyNote background="#FFF8A7">
                 <StickyNoteText>
                   How might we make a drink delivery app where you can customize
                   drinks and orders?
@@ -608,7 +748,7 @@ export default function Pochui() {
               </StickyNote>
             </Grid>
             <Grid item xs={5} md={2}>
-              <StickyNote background="#A7DFFF">
+              <StickyNote background="#FFF8A7">
                 <StickyNoteText>
                   How might we make users come back consistently to collect
                   rewards and bonuses from ordering food / setting up dine-in
@@ -617,7 +757,7 @@ export default function Pochui() {
               </StickyNote>
             </Grid>
             <Grid item xs={5} md={2}>
-              <StickyNote background="#BEA7FF">
+              <StickyNote background="#FFF8A7">
                 <StickyNoteText>
                   How might we create a one-stop-shop experience for new, and
                   old users?
@@ -625,7 +765,7 @@ export default function Pochui() {
               </StickyNote>
             </Grid>
             <Grid item xs={5} md={2}>
-              <StickyNote background="#FFD1A7">
+              <StickyNote background="#FFF8A7">
                 <StickyNoteText>
                   How might we make it less stressful for users ordering, and
                   customizing orders?
@@ -633,7 +773,7 @@ export default function Pochui() {
               </StickyNote>
             </Grid>
             <Grid item xs={5} md={2}>
-              <StickyNote background="#FDA7FF">
+              <StickyNote background="#FFF8A7">
                 <StickyNoteText>
                   How might we make it easier for users to order from anywhere,
                   anytime?
@@ -641,7 +781,7 @@ export default function Pochui() {
               </StickyNote>
             </Grid>
             <Grid item xs={5} md={2}>
-              <StickyNote background="#FFA7C7">
+              <StickyNote background="#FFF8A7">
                 <StickyNoteText>
                   How might we make the experience on the app more interactive?
                   Animations, videos?
@@ -649,7 +789,7 @@ export default function Pochui() {
               </StickyNote>
             </Grid>
             <Grid item xs={5} md={2}>
-              <StickyNote background="#FFA7A7">
+              <StickyNote background="#FFF8A7">
                 <StickyNoteText>
                   How might having multiple Japanese / Asian restaurants in the
                   app affect the user journey?
@@ -658,68 +798,80 @@ export default function Pochui() {
             </Grid>
           </Grid>
           <SectionSubTitle component="p" my={4}>
-            2. Information architecture
+            2. Prioritization plan
           </SectionSubTitle>
-          <Box my={10}>
-            <Image
-              src="/images/shiba/architecture.png"
-              alt="Picture of the information architecture"
-              layout="responsive"
-              width="1164"
-              height="339"
-            />
-          </Box>
-          <Typography variant="body1" component="p" textAlign="center" mb={10}>
-            Lastly, to wrap the ideate phase of the project - I decided it was
-            time to start drawing things out on paper. This meant getting ready
-            to create physical and digital wireframes. I also decided to start
-            sketching out Shiba’s logo during this stage.
+          <Typography variant="body1" component="p" mb={10}>
+            Plotting possible features onto a graph helped me plan out how to
+            break my time down on what features. I was able to plan around the
+            mvp for user testing, and if I were to return to this project, I
+            would have a list of features to go through and design for future
+            mockups and versions.
           </Typography>
-          <SectionSubTitle component="p" my={4}>
-            1. Physical wireframes
-          </SectionSubTitle>
-        </Container>
-        <WhiteBackdrop my={10}>
-          <Container maxWidth="md">
-            <Image
-              src="/images/shiba/paperwireframes.png"
-              alt="Picture of the information architecture"
-              layout="responsive"
-              width="1164"
-              height="888"
-            />
-          </Container>
-        </WhiteBackdrop>
-        <Container maxWidth="md">
-          <SectionSubTitle component="p" my={4}>
-            2. Digital wireframes
-          </SectionSubTitle>
           <Box my={10}>
             <Image
-              src="/images/shiba/digitalwireframes.png"
-              alt="Picture of the information architecture"
+              src="/images/pochui/prioritizationplan.png"
+              alt="Picture of the prioritization plan"
               layout="responsive"
               width="1164"
-              height="733"
+              height="569"
             />
           </Box>
         </Container>
-        <Container maxWidth="md">
-          <SectionSubTitle component="p" my={4}>
-            3. Shiba inital logo sketches
-          </SectionSubTitle>
-        </Container>
-        <WhiteBackdrop my={10}>
+        <WhiteBackdrop py={4}>
           <Container maxWidth="md">
-            <Image
-              src="/images/shiba/paperlogo.png"
-              alt="Picture of the information architecture"
-              layout="responsive"
-              width="1164"
-              height="873"
-            />
+            <SectionSubTitle component="p" my={4}>
+              1. Physical wireframes
+            </SectionSubTitle>
+            <Box my={10}>
+              <ItemCarousel>
+                <Image
+                  src="/images/pochui/paper1.png"
+                  alt=""
+                  layout="responsive"
+                  width="1186"
+                  height="958"
+                />
+                <Image
+                  src="/images/pochui/paper2.png"
+                  alt=""
+                  layout="responsive"
+                  width="1181"
+                  height="885"
+                />
+                <Image
+                  src="/images/pochui/paper3.png"
+                  alt=""
+                  layout="responsive"
+                  width="1181"
+                  height="885"
+                />
+              </ItemCarousel>
+            </Box>
           </Container>
         </WhiteBackdrop>
+        <Container maxWidth="md">
+          <SectionSubTitle component="p" mt={10}>
+            3. Digital wireframes & wireflow concepts
+          </SectionSubTitle>
+          <Box my={10}>
+            <ItemCarousel>
+              <Image
+                src="/images/pochui/wireframe1.png"
+                alt=""
+                layout="responsive"
+                width="1184"
+                height="1093"
+              />
+              <Image
+                src="/images/pochui/wireframe2.png"
+                alt=""
+                layout="responsive"
+                width="1164"
+                height="1033"
+              />
+            </ItemCarousel>
+          </Box>
+        </Container>
       </DarkGrey>
       <Box my={10}>
         <Container maxWidth="md">
@@ -730,42 +882,46 @@ export default function Pochui() {
             fontWeight={600}
             mb={10}
           >
-            Prototype
+            Doing the tests and making it pretty
           </Typography>
           <Typography variant="body1" component="p" textAlign="center">
-            With all the user research completed, and the wireframes drawn out
-            and mocked up, it was time to prototype a basic user journey for
-            testing, doing this correctly allowed me to get a lot of valuable
-            feedback on some design, and userflow errors that I made.
-          </Typography>
-          <br />
-          <Typography variant="body1" component="p" textAlign="center" mb={10}>
-            I started off by doing wireflow prototypes, and then I followed that
-            up by doing some much needed preperation for my user studies and
-            interviews.
+            Using the information from the previous stage, I was able to move
+            into the user testing stage within a reasonable amount of time. I
+            prepped my concepts, polished my wireflows, and started collecting
+            data that would help me create a high-fidelity version of the
+            product.
           </Typography>
           <SectionSubTitle component="p" my={4}>
-            1. wireflow
+            1. User study prep - planning the interviews
           </SectionSubTitle>
+          <Box>
+            <ItemCarousel>
+              {UserStudyPrep.map((item, index) => (
+                <CarouselCard py={2} px={6} key={index}>
+                  <CarouselCardHeading>
+                    <Typography
+                      variant="body1"
+                      component="p"
+                      color="#fff"
+                      fontWeight={700}
+                    >
+                      {item.title}
+                    </Typography>
+                  </CarouselCardHeading>
+                  <CarouselCardContent>
+                    <Typography variant="body2" component="p">
+                      {item.content}
+                    </Typography>
+                  </CarouselCardContent>
+                </CarouselCard>
+              ))}
+            </ItemCarousel>
+          </Box>
         </Container>
-        <DarkGrey py={4}>
-          <Container maxWidth="md">
-            <Image
-              src="/images/shiba/wireflow.png"
-              alt="Picture of the information architecture"
-              layout="responsive"
-              width="1164"
-              height="709"
-            />
-          </Container>
-        </DarkGrey>
         <Box my={4}>
           <Container maxWidth="md">
             <SectionSubTitle component="p" my={4}>
-              2. User study prep - Writing out the content
-            </SectionSubTitle>
-            <SectionSubTitle component="p" my={4}>
-              3. Post User study - Collecting data
+              2. Post User Study - Simplifying data
             </SectionSubTitle>
             <Grid container columns={10}>
               <Grid item container columns={10} xs={10} sm={5} md={4}>
@@ -787,39 +943,32 @@ export default function Pochui() {
                 <Grid item xs={10} sm={5}>
                   <StickyNote background="#FFF8A7">
                     <StickyNoteText>
-                      Account creation is missing a few information fields that
-                      are needed
+                      User information requested in the form needs a bit of
+                      work.
                     </StickyNoteText>
                   </StickyNote>
                 </Grid>
                 <Grid item xs={10} sm={5}>
                   <StickyNote background="#FFF8A7">
                     <StickyNoteText>
-                      Welcome screen after the creation is uneeded
+                      The layout is a bit confusing, could use some polishing.
                     </StickyNoteText>
                   </StickyNote>
                 </Grid>
                 <Grid item xs={10} sm={5}>
                   <StickyNote background="#FFF8A7">
                     <StickyNoteText>
-                      Overall app is missing a lot of accessibility options
+                      Some elements are unclear; considered working around them
+                      a bit more to make it more accessible.
                     </StickyNoteText>
                   </StickyNote>
                 </Grid>
                 <Grid item xs={10} sm={5}>
                   <StickyNote background="#FFF8A7">
                     <StickyNoteText>
-                      Having a username for this type of app doesn’t make a lot
-                      of sense, instead it should be a first and last name for
-                      account creation - and then email for login
-                    </StickyNoteText>
-                  </StickyNote>
-                </Grid>
-                <Grid item xs={10} sm={5}>
-                  <StickyNote background="#FFF8A7">
-                    <StickyNoteText>
-                      Consider adding sign-in partners as an accommodation
-                      feature
+                      Missing information fields under the account creation tab,
+                      could also use some more personalization work under user
+                      profiles.
                     </StickyNoteText>
                   </StickyNote>
                 </Grid>
@@ -829,7 +978,7 @@ export default function Pochui() {
                   item
                   xs={10}
                   sx={{
-                    background: "#FF8585",
+                    background: "#A7CFFF",
                     mb: 2,
                     mx: 0.5,
                     height: "fit-content",
@@ -841,14 +990,16 @@ export default function Pochui() {
                   </Typography>
                 </Grid>
                 <Grid item sx={{ height: "100%", width: "100%" }}>
-                  <StickyNote background="#FF8585">
+                  <StickyNote background="#A7CFFF">
                     <StickyNoteText>
-                      Interface is clean and there’s good whitespace usage
+                      The concept is good; it’s interesting seeing an app like
+                      this since there are no similar competitors.
                     </StickyNoteText>
                   </StickyNote>
-                  <StickyNote background="#FF8585">
+                  <StickyNote background="#A7CFFF">
                     <StickyNoteText>
-                      Good use of photo elements to make the app less boring
+                      Having a landing page that describes the product is a good
+                      way to make it more accessible and clear to everyone.
                     </StickyNoteText>
                   </StickyNote>
                 </Grid>
@@ -858,7 +1009,7 @@ export default function Pochui() {
                   item
                   xs={10}
                   sx={{
-                    background: "#FFC17C",
+                    background: "#A7EFFF",
                     mb: 2,
                     mx: 0.5,
                     height: "fit-content",
@@ -870,90 +1021,94 @@ export default function Pochui() {
                   </Typography>
                 </Grid>
                 <Grid item xs={10} sm={5}>
-                  <StickyNote background="#FFC17C">
+                  <StickyNote background="#A7EFFF">
                     <StickyNoteText>
-                      Add a dropdown under the address book for easier access to
-                      different locations
+                      Consider playing with the style of the page. Maybe a
+                      dashboard approach with a side nav could be good?
                     </StickyNoteText>
                   </StickyNote>
                 </Grid>
                 <Grid item xs={10} sm={5}>
-                  <StickyNote background="#FFC17C">
+                  <StickyNote background="#A7EFFF">
                     <StickyNoteText>
-                      Add a view all button for sections, ex; this week’s deals
-                      would direct you to a seperate page with other deals.
+                      A side navigation bar could make it easier to connect the
+                      app and the website.
                     </StickyNoteText>
                   </StickyNote>
                 </Grid>
                 <Grid item xs={10} sm={5}>
-                  <StickyNote background="#FFC17C">
+                  <StickyNote background="#A7EFFF">
                     <StickyNoteText>
-                      Look into accessibility options and see how you would go
-                      on about adding a text size slider, or maybe have some way
-                      of enabling accessibility options under settings
-                    </StickyNoteText>
-                  </StickyNote>
-                </Grid>
-                <Grid item xs={10} sm={5}>
-                  <StickyNote background="#FFC17C">
-                    <StickyNoteText>
-                      Re-work the food customization system into something
-                      cleaner
-                    </StickyNoteText>
-                  </StickyNote>
-                </Grid>
-                <Grid item xs={10} sm={5}>
-                  <StickyNote background="#FFC17C">
-                    <StickyNoteText>
-                      Change the structure of the registration and login forms
-                      into something more user friendly
+                      Footer is not needed in most parts, so you’ll probably
+                      only have that on the main page.
                     </StickyNoteText>
                   </StickyNote>
                 </Grid>
               </Grid>
             </Grid>
             <SectionSubTitle component="p" my={4}>
-              4. Post User study - Pattern Identification and Prioritized
-              insights
+              3. Post User Study - Insight identification
             </SectionSubTitle>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              After compiling all my research, insights, and notes from the user
-              studies, I got to work and I started creating the revised hi-fi
-              mockups and prototypes. This part took me the longest because I do
-              tend to dwell on some designs until they’re as pixel perfect as
-              possible, but I was happy with the overall results.
+            <Box>
+              <ItemCarousel>
+                {PostUserStudy.map((item, index) => (
+                  <CarouselCard py={2} px={6} key={index}>
+                    <CarouselCardHeading>
+                      <Typography
+                        variant="body1"
+                        component="p"
+                        color="#fff"
+                        fontWeight={700}
+                      >
+                        {item.title}
+                      </Typography>
+                    </CarouselCardHeading>
+                    <CarouselCardContent>
+                      <Typography variant="body2" component="p">
+                        {item.content}
+                      </Typography>
+                    </CarouselCardContent>
+                  </CarouselCard>
+                ))}
+              </ItemCarousel>
+            </Box>
+            <SectionSubTitle component="p" my={4}>
+              3. Doing the visual work
+            </SectionSubTitle>
+            <Typography variant="body1" component="p">
+              My favorite part has to be getting down to it and making things
+              visual, having a background in design allowed me to make a lot of
+              style choices that led this project to where it is right now -
+              below you can see a sample of some mockups for web and phone, you
+              can check out the full XD file{" "}
+              <Typography
+                fontWeight={700}
+                color="325BDE"
+                component="a"
+                href="/"
+                sx={{ textDecoration: "none", underline: "none" }}
+              >
+                right here.
+              </Typography>
             </Typography>
-            <Box mb={4}>
+            <Box my={4}>
               <Image
-                src="/images/shiba/shibapresentation.png"
+                src="/images/pochui/pochui1.png"
                 alt=""
                 role="presentation"
                 layout="responsive"
                 width="1164"
-                height="573"
+                height="635"
               />
             </Box>
             <Box my={4}>
               <Image
-                src="/images/shiba/shibaloginsignup.png"
-                alt="Picture of the shibas login and signup screens"
+                src="/images/pochui/pochui2.png"
+                alt=""
+                role="presentation"
                 layout="responsive"
                 width="1164"
-                height="443"
-              />
-            </Box>
-            <Box my={4}>
-              <Image
-                src="/images/shiba/shibaapp.png"
-                alt="Picture of the shiba app"
-                layout="responsive"
-                width="1164"
-                height="703"
+                height="1075"
               />
             </Box>
           </Container>
@@ -1135,7 +1290,7 @@ const CarouselCard = styled(Box)`
 
   ${({ theme }) => theme.breakpoints.up("sm")} {
     flex-direction: row;
-    min-height: 200px;
+    min-height: 180px;
   }
 `;
 
@@ -1145,6 +1300,7 @@ const CarouselCardHeading = styled(Box)`
   justify-content: center;
   align-items: center;
   margin: 64px 0px;
+  color: #fff;
 
   ${({ theme }) => theme.breakpoints.up("sm")} {
     flex: 1;
@@ -1158,6 +1314,7 @@ const CarouselCardContent = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #fff;
 `;
 
 const GlobalStyles = createGlobalStyle`
