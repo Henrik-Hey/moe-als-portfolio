@@ -33,6 +33,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta name="viewport" content="width=400, initial-scale=1.0"></meta>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
