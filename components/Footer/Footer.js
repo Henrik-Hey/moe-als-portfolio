@@ -13,7 +13,7 @@ const Footer = ({ backgroundColor = "#000" }) => {
               MOE ALS
             </Typography>
             <Typography variant="body1" color="white">
-              Visual Desiner
+              Visual Designer
             </Typography>
           </Grid>
           <Grid item xs={10} md={2}>
