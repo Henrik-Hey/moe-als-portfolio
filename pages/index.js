@@ -3,6 +3,8 @@ import Section from "../components/Section/Section";
 import { createGlobalStyle } from "styled-components";
 import NavContainer from "../components/NavContainer/navContainer";
 import Backdrop from "../components/Backdrop/Backdrop";
+import FadeIn from "../components/FadeIn/FadeIn";
+import Footer from "../components/Footer/Footer";
 
 import Intro from "../sections/intro";
 import Shiba from "../sections/shiba";
@@ -24,15 +26,22 @@ export default function Home() {
       <Section name="Intro">
         <Intro />
       </Section>
-      <Section name="SHIBA">
-        <Shiba />
-      </Section>
-      <Section name="POCHUI">
-        <Pochui />
-      </Section>
-      <Section name="APOLLO">
-        <Apollo />
-      </Section>
+      <FadeIn>
+        <Section name="SHIBA">
+          <Shiba />
+        </Section>
+      </FadeIn>
+      <FadeIn>
+        <Section name="POCHUI">
+          <Pochui />
+        </Section>
+      </FadeIn>
+      <FadeIn>
+        <Section name="APOLLO">
+          <Apollo />
+        </Section>
+      </FadeIn>
+      {/* <Footer backgroundColor="#1E88E5" /> */}
     </>
   );
 }

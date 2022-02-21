@@ -40,21 +40,30 @@ const Footer = ({ backgroundColor = "#000" }) => {
             <Typography variant="body1" color="white" fontWeight={700}>
               SOCIALS
             </Typography>
-            <a href="https://www.linkedin.com/in/moe-als-508908193/">
+            <StyledLink
+              href="https://www.linkedin.com/in/moe-als-508908193/"
+              target="_blank"
+            >
               <Typography variant="body2" color="white">
                 linkedIn
               </Typography>
-            </a>
-            <a href="https://www.instagram.com/design.moexls/">
+            </StyledLink>
+            <StyledLink
+              href="https://www.instagram.com/design.moexls/"
+              target="_blank"
+            >
               <Typography variant="body2" color="white">
                 Instagram (design)
               </Typography>
-            </a>
-            <a href="https://www.instagram.com/moe.xls/">
+            </StyledLink>
+            <StyledLink
+              href="https://www.instagram.com/moe.xls/"
+              target="_blank"
+            >
               <Typography variant="body2" color="white">
                 instagram (photography)
               </Typography>
-            </a>
+            </StyledLink>
           </Grid>
           <Grid item xs={10} md={2}>
             <Typography variant="body1" color="white" fontWeight={700}>
@@ -69,5 +78,9 @@ const Footer = ({ backgroundColor = "#000" }) => {
     </Box>
   );
 };
+
+const StyledLink = styled.a`
+  text-decoration: none;
+`;
 
 export default Footer;

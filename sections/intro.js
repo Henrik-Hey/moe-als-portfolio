@@ -65,12 +65,17 @@ const IntroText1 = styled.h1`
 `;
 
 const IntroText2 = styled.h2`
+  height: 7.5rem;
   font-size: 2.5rem;
   font-weight: 100;
   font-family: "Epilogue", sans-serif;
 
   & > b {
     color: ${({ theme }) => theme.palette.primary.main};
+  }
+
+  ${({ theme }) => theme.breakpoints.up("sm")} {
+    height: 5rem;
   }
 `;
 

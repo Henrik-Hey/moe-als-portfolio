@@ -7,6 +7,7 @@ import styled from "styled-components";
 const Apollo = () => {
   return (
     <GridSegment
+      title="PRO 3 - APOLLO"
       content={
         <>
           <ProjectBrief

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 // eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
@@ -36,6 +37,8 @@ export default class MyDocument extends Document {
           <meta charset="utf-8"></meta>
           <meta name="viewport" content="width=400, initial-scale=1.0"></meta>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"

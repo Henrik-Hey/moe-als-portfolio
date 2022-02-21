@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
+
 import { useMediaQuery } from "@mui/material";
 
 const lineNum = 10;
@@ -11,7 +12,12 @@ const Backdrop = ({ container }) => {
 
   useEffect(() => {
     if (!linesRef) return;
+
+    gsap.registerPlugin(ScrollToPlugin);
+    gsap.registerPlugin(ScrollTrigger);
+
     const lines = linesRef.current;
+    const timeline = gsap.timeline();
     lines.forEach((line, i) => {
       const rand1 = Math.random() * 100;
       const rand2 = Math.random() * 100;
@@ -22,7 +28,39 @@ const Backdrop = ({ container }) => {
         rotationY: `${rand2}`,
         rotationZ: `${rand2}`,
       });
+
+      const rand3 = Math.random() * 100;
+      const rand4 = Math.random() * 100;
+      const _timeline = gsap.timeline();
+      _timeline.fromTo(
+        line,
+        {
+          y: `${rand1}vh`,
+          x: `-150vw`,
+          rotationX: `${rand2}`,
+          rotationY: `${rand2}`,
+          rotationZ: `${rand2}`,
+        },
+        {
+          y: `${rand3}vh`,
+          x: `-150vw`,
+          rotationX: `${rand4}`,
+          rotationY: `${rand4}`,
+          rotationZ: `${rand4}`,
+        }
+      );
+      timeline.add(_timeline);
     });
+    const trigger = ScrollTrigger.create({
+      trigger: "#__next",
+      start: "top top",
+      end: "bottom 50%+=100px",
+      animation: timeline,
+      scrub: true,
+    });
+    return () => {
+      trigger.kill();
+    };
   }, []);
 
   return (

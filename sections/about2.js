@@ -18,9 +18,13 @@ const About2Section = () => {
           below!
           <br />
           <br />
-          <Link>Photography</Link>
+          <Link href="https://www.instagram.com/moe.xls/" target="_blank">
+            Photography
+          </Link>
           <br />
-          <Link>Design</Link>
+          <Link href="https://www.instagram.com/design.moexls/" target="_blank">
+            Design
+          </Link>
         </ContentContainer>
       }
       image={
