@@ -34,8 +34,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charset="utf-8"></meta>
-          <meta name="viewport" content="width=400, initial-scale=1.0"></meta>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
