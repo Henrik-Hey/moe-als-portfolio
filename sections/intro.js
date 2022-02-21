@@ -29,7 +29,7 @@ const Intro = () => {
           rel="noreferrer"
           href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d928f593-9bab-3423-b3b2-fd3d1eb0929c"
         >
-          <Button1>Resume</Button1>
+          <Button1>Resumé</Button1>
         </a>
         <Link href="/about" passHref>
           <Button2>About me</Button2>

@@ -55,7 +55,7 @@ const NavContainer = ({ position = "absolute", color }) => {
             href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d928f593-9bab-3423-b3b2-fd3d1eb0929c"
             $color={color}
           >
-            Resume
+            Resumé
           </NavLink>
           <NavLink href="/about" $color={color}>
             About
@@ -79,7 +79,7 @@ const NavContainer = ({ position = "absolute", color }) => {
             href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d928f593-9bab-3423-b3b2-fd3d1eb0929c"
             $color={color}
           >
-            Resume
+            Resumé
           </NavLink>
           <NavLink href="/about" $color={color}>
             About
