@@ -49,7 +49,7 @@ const Backdrop = ({ container }) => {
           rotationZ: `${rand4}`,
         }
       );
-      timeline.add(_timeline);
+      timeline.add(_timeline, 0);
     });
     const trigger = ScrollTrigger.create({
       trigger: "#__next",

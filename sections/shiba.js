@@ -14,6 +14,7 @@ const Shiba = () => {
       content={
         <>
           <ProjectBrief
+            name="shiba"
             brief={
               <>
                 Create a mobile app for a new food delivery service, this

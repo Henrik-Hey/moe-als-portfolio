@@ -23,21 +23,21 @@ export default function Home() {
       <Backdrop container={container} />
       <GlobalStyles />
       <NavContainer position="absolute" />
-      <Section name="Intro">
+      <Section name="Intro" style={{ marginBottom: "64px" }}>
         <Intro />
       </Section>
       <FadeIn>
-        <Section name="SHIBA">
+        <Section name="SHIBA" style={{ marginBottom: "64px" }}>
           <Shiba />
         </Section>
       </FadeIn>
       <FadeIn>
-        <Section name="POCHUI">
+        <Section name="POCHUI" style={{ marginBottom: "64px" }}>
           <Pochui />
         </Section>
       </FadeIn>
       <FadeIn>
-        <Section name="APOLLO">
+        <Section name="APOLLO" style={{ marginBottom: "64px" }}>
           <Apollo />
         </Section>
       </FadeIn>

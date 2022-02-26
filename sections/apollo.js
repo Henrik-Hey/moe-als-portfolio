@@ -11,6 +11,8 @@ const Apollo = () => {
       content={
         <>
           <ProjectBrief
+            name="apollo"
+            notStarted
             brief={
               <>
                 Re brand Apollo completely, some design elements are there, but

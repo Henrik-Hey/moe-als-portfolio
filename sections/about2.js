@@ -6,8 +6,9 @@ import styled from "styled-components";
 const About2Section = () => {
   return (
     <GridSegment
-      contentOrder={{ sm: 2, md: 2 }}
-      imageOrder={{ sm: 1, md: 1 }}
+      contentOrder={{ sm: 1, md: 2 }}
+      imageOrder={{ sm: 2, md: 1 }}
+      align="flex-start"
       content={
         <ContentContainer>
           These work samples include logos I did, and some fun illustrations I
@@ -72,6 +73,7 @@ const ImageBox = styled.div`
 const ContentContainer = styled.div`
   font-family: "Epilogue", sans-serif;
   font-size: 0.95rem;
+  max-width: 400px;
 `;
 
 const Link = styled.a`

@@ -6,36 +6,35 @@ import styled from "styled-components";
 const AboutSection = () => {
   return (
     <GridSegment
+      contentOrder={{ sm: 2, md: 2 }}
+      imageOrder={{ sm: 1, md: 1 }}
+      align="flex-start"
       content={
         <ContentContainer>
-          Hey :) my name is Moe. I’m a Visual Designer based in Canada, I
-          previously worked as a Graphic Designer, and photographer after
-          graduating from Fanshawe college.
+          Hey :) My name is Moe.{" "}
+          <b>I’m a Visual UX Designer based in Canada.</b>
           <br />
           <br />
-          Prior to switching to UX Visual Design, I was a graphic designer
-          specializing in brand identity and web design. I always enjoyed
-          creating visual elements and being a graphic designer allowed me to do
-          work for different clients and businesses. My work included everything
-          from logos and brand guides, to full on site re branding projects.
+          Prior to my UX career, I was a <b>graphic designer</b> who specialized
+          in
+          <b>brand identity</b> and <b>web design</b>. I always enjoyed creating
+          visual elements and being in that position allowed me to do work for
+          different clients and businesses. I did everything design related, if
+          it was a website, a poster, a brochure, or even a business card, I was
+          always down to design it.
           <br />
           <br />
-          After 2 years of designing logos, social media posts, promotional
-          posters, and business stationary for clients, I decided to shift focus
-          to UX Visual Design.
+          After 3 years of freelance work, I realized that I wasn’t meeting the
+          goals I set for myself as much as I would’ve liked, so I decided to
+          shift focus to <b>Visual UX Design.</b>
           <br />
           <br />
-          I have 7 UX Google course certificates, from the basics of UX, to user
-          Research and complex prototypes using Figma and Adobe XD.
+          I’m currently still freelancing as a graphic designer, but I’m doing a
+          handful of UX work for the startup I’m working with.
           <br />
           <br />
-          I’m currently working with two startups as a UX designer. During my
-          free time, I read up on UX articles and work on improving my UX
-          skills.
-          <br />
-          <br />
-          Click on the arrow if you would like to see some — not to UX related —
-          samples of my work in the past few years.
+          You can check out some random design stuff I did just down below.
+          Thank you for taking the time to read this friend!
         </ContentContainer>
       }
       image={
@@ -62,6 +61,7 @@ const ImageContainer = styled.div`
 const ContentContainer = styled.div`
   font-family: "Epilogue", sans-serif;
   font-size: 0.95rem;
+  max-width: 400px;
 `;
 
 export default AboutSection;

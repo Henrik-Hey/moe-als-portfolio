@@ -2,7 +2,14 @@ import React from "react";
 import { Container, Grid, Box } from "@mui/material";
 import styled from "styled-components";
 
-const GridSegment = ({ content, image, title, contentOrder, imageOrder }) => {
+const GridSegment = ({
+  content,
+  image,
+  title,
+  contentOrder,
+  imageOrder,
+  align = "flex-end",
+}) => {
   return (
     <Container maxWidth="lg">
       <Grid container>
@@ -12,7 +19,7 @@ const GridSegment = ({ content, image, title, contentOrder, imageOrder }) => {
           </ImageBlock>
         </Grid>
         <Grid item xs={12} sm={6} md={6} order={imageOrder}>
-          <StyledContentBlock my={4}>
+          <StyledContentBlock my={4} alignItems={align}>
             <Title>{title}</Title>
             <Box flex="1" display="flex" alignItems="center">
               {content}
@@ -25,14 +32,13 @@ const GridSegment = ({ content, image, title, contentOrder, imageOrder }) => {
 };
 
 const StyledContentBlock = styled(Box)`
-  max-width: calc(600px - 200px);
   height: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
 
   ${({ theme }) => theme.breakpoints.up("md")} {
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
     min-height: 90vh;
     width: 100%;
   }

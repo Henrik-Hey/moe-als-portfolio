@@ -77,6 +77,7 @@ const blink = keyframes`
 `;
 
 const StyledSpan = styled("span")`
+  color: ${(props) => props.theme.colors.primary};
   &::after {
     content: "|";
     animation: ${blink} 3s infinite;

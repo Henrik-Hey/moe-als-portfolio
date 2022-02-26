@@ -1,93 +1,57 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import { Container, Box } from "@mui/material";
 import Typewriter from "../components/Typewriter/Typewriter";
 
 const Intro = () => {
   return (
-    <IntroContainer>
-      <IntroText1>
-        Hello, my name is Moe — I’m a visual <br />
-        <b>designer</b> based in Canada.
-      </IntroText1>
-      <IntroText2>
-        I’m passionate about{" "}
-        <b>
+    <IntroContainer maxWidth="lg">
+      <IntroTextContainer>
+        <IntroText1>
+          Hey, my name is Moe — I’m a visual UX designer based in Canada, and
+          I’m passionate about <br />
           <Typewriter
             contents={[
-              "User experience",
-              "Visual design",
-              "designing for accessibility",
+              "User experience.",
+              "Visual design.",
+              "designing for accessibility.",
             ]}
           />
-        </b>
-        .
-      </IntroText2>
-      <ButtonContainer>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d928f593-9bab-3423-b3b2-fd3d1eb0929c"
-        >
-          <Button1>Resumé</Button1>
-        </a>
-        <Link href="/about" passHref>
-          <Button2>About me</Button2>
-        </Link>
-      </ButtonContainer>
+        </IntroText1>
+      </IntroTextContainer>
     </IntroContainer>
   );
 };
 
-const IntroContainer = styled.div`
-  max-width: 960px;
-  width: 100%;
+const IntroContainer = styled(Container)`
   height: 100vh;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 0px 50px;
-  width: calc(100% - 100px);
-
-  @media (min-width: 764px) {
-    padding: 0px;
-    width: 100%;
-  }
 `;
 
 const IntroText1 = styled.h1`
-  font-size: 2.5rem;
-  font-weight: 100;
+  font-size: 24px;
+  font-weight: 500;
   font-family: "Epilogue", sans-serif;
-`;
-
-const IntroText2 = styled.h2`
-  height: 8rem;
-  font-size: 2.5rem;
-  font-weight: 100;
-  font-family: "Epilogue", sans-serif;
-
-  & > b {
-    color: ${({ theme }) => theme.palette.primary.main};
-  }
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 
   ${({ theme }) => theme.breakpoints.up("sm")} {
-    height: 5rem;
+    font-size: 42px;
   }
 `;
 
-const ButtonContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+const IntroTextContainer = styled.div`
+  border-left: 6px solid ${({ theme }) => theme.palette.primary.main};
+  padding-left: 20px;
 
-  @media (min-width: 764px) {
-    flex-direction: row;
+  ${({ theme }) => theme.breakpoints.up("sm")} {
+    border-left: 12px solid ${({ theme }) => theme.palette.primary.main};
+    font-size: 42px;
   }
 `;
 

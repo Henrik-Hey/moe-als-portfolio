@@ -10,9 +10,11 @@ const Pochui = () => {
       title="PRO 2 - POCHUI"
       contentOrder={{ sm: 2, md: 2 }}
       imageOrder={{ sm: 1, md: 1 }}
+      align="flex-start"
       content={
         <>
           <ProjectBrief
+            name="pochui"
             brief={
               <>
                 Create a mobile / web application for skateboarders who are

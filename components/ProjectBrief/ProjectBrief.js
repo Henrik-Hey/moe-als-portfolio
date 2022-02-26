@@ -3,35 +3,46 @@ import Link from "next/link";
 import { ButtonBase, Box } from "@mui/system";
 import styled from "styled-components";
 
-const ProjectBrief = ({ brief, timeline, roles, projectURL }) => {
+const ProjectBrief = ({
+  brief,
+  name,
+  timeline,
+  roles,
+  projectURL,
+  notStarted,
+}) => {
   return (
     <ContentContainer>
+      <Heading>Project Name: {name}</Heading>
+      <br />
+      <br />
+      <br />
       <Heading>Project brief:</Heading> {brief}
       <br />
       <br />
       <br />
       <Heading>Project timeline:</Heading> {timeline} <br />
       <Heading>Roles:</Heading> {roles}
-      {projectURL && (
-        <>
-          <br />
-          <br />
-          <br />
-          <StyledLink href={projectURL} passHref>
-            <LinkContent component={ButtonBase}>View project</LinkContent>
-          </StyledLink>
-        </>
-      )}
+      <br />
+      <br />
+      <br />
+      <StyledLink href={projectURL || ""} passHref $disabled={notStarted}>
+        <LinkContent $disabled={notStarted} component={ButtonBase}>
+          {notStarted ? "Coming soon" : "View project"}
+        </LinkContent>
+      </StyledLink>
     </ContentContainer>
   );
 };
 
 const ContentContainer = styled.div`
   font-family: "Epilogue", sans-serif;
+  font-weight: 100;
+  max-width: 400px;
 `;
 
 const Heading = styled.span`
-  font-weight: 100;
+  font-weight: 500;
   font-family: "Epilogue", sans-serif;
   color: ${({ theme }) => theme.palette.primary.main};
 `;
@@ -45,8 +56,8 @@ const LinkContent = styled(Box)`
   display: flex;
   width: fit-content;
   align-items: center;
-  background: #1e88e5;
-  border-radius: 11px;
+  background: ${({ $disabled }) => ($disabled ? "#A6A6A6" : "#1e88e5")};
+  pointer-events: ${({ $disabled }) => ($disabled ? "none" : "all")};
   color: white;
   cursor: pointer;
   padding: 12px 52px;
