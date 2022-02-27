@@ -25,12 +25,11 @@ const Intro = () => {
 };
 
 const IntroContainer = styled(Container)`
-  height: 100vh;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 `;
 
 const IntroText1 = styled.h1`
