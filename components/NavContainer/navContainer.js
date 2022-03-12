@@ -28,7 +28,7 @@ const NavContainer = ({ position = "absolute", color }) => {
             height={80}
           />
         </LogoContainer>
-        <ShowDesktop>
+        {isDesktop ? (
           <NavLinkContainer>
             <NavLink href="/" $color={color}>
               Home
@@ -60,34 +60,35 @@ const NavContainer = ({ position = "absolute", color }) => {
               About
             </NavLink>
           </NavLinkContainer>
-        </ShowDesktop>
-        <ShowMobile>
-          <MobileNavLinkContainer $open={open}>
-            <NavLink href="/" $color={color}>
-              Home
-            </NavLink>
-            <NavLink href="/shiba" $color={color}>
-              Shiba
-            </NavLink>
-            <NavLink href="/pochui" $color={color}>
-              Pochui
-            </NavLink>
-            <NavLink
-              target="_blank"
-              rel="noreferrer"
-              href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:62fd54a1-5871-3c47-9038-56fdb6539289"
-              $color={color}
-            >
-              Resumé
-            </NavLink>
-            <NavLink href="/about" $color={color}>
-              About
-            </NavLink>
-          </MobileNavLinkContainer>
-          <NavLinkContainer>
-            <Hamburger toggled={open} toggle={setOpen} color="#1E88E5" />
-          </NavLinkContainer>
-        </ShowMobile>
+        ) : (
+          <>
+            <MobileNavLinkContainer $open={open}>
+              <NavLink href="/" $color={color}>
+                Home
+              </NavLink>
+              <NavLink href="/shiba" $color={color}>
+                Shiba
+              </NavLink>
+              <NavLink href="/pochui" $color={color}>
+                Pochui
+              </NavLink>
+              <NavLink
+                target="_blank"
+                rel="noreferrer"
+                href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:62fd54a1-5871-3c47-9038-56fdb6539289"
+                $color={color}
+              >
+                Resumé
+              </NavLink>
+              <NavLink href="/about" $color={color}>
+                About
+              </NavLink>
+            </MobileNavLinkContainer>
+            <NavLinkContainer>
+              <Hamburger toggled={open} toggle={setOpen} color="#1E88E5" />
+            </NavLinkContainer>
+          </>
+        )}
       </NavContent>
     </StyledContainer>
   );
@@ -105,7 +106,7 @@ const NavContent = styled.div`
   width: 100%;
   z-index: 1;
 
-  ${({ theme }) => theme.breakpoints.up("sm")} {
+  ${({ theme }) => theme.breakpoints.up("md")} {
     position: ${(props) => props.$position};
   }
 `;
@@ -118,7 +119,7 @@ const LogoContainer = styled.div`
   width: 80px;
   z-index: 1;
 
-  ${({ theme }) => theme.breakpoints.up("sm")} {
+  ${({ theme }) => theme.breakpoints.up("md")} {
     left: 0px;
   }
 `;
@@ -126,7 +127,7 @@ const LogoContainer = styled.div`
 const ShowDesktop = styled.div`
   display: none;
 
-  ${({ theme }) => theme.breakpoints.up("sm")} {
+  ${({ theme }) => theme.breakpoints.up("md")} {
     display: block;
   }
 `;
@@ -134,7 +135,7 @@ const ShowDesktop = styled.div`
 const ShowMobile = styled.div`
   display: block;
 
-  ${({ theme }) => theme.breakpoints.up("sm")} {
+  ${({ theme }) => theme.breakpoints.up("md")} {
     display: none;
   }
 `;
@@ -186,7 +187,7 @@ const NavLink = styled.a`
   margin-top: 16px;
   margin-bottom: 16px;
 
-  ${({ theme }) => theme.breakpoints.up("sm")} {
+  ${({ theme }) => theme.breakpoints.up("md")} {
     margin-top: 0px;
     margin-bottom: 0px;
   }
