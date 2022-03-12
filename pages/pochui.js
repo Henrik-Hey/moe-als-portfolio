@@ -54,6 +54,8 @@ export default function Pochui() {
                 enthusiasts. It’s a place where you can grow your audience and
                 business while making friends worldwide.
               </Typography>
+              <br />
+              <br />
             </Grid>
             <Grid item xs={12} md={2} />
             <Grid item xs={12} md={5}>

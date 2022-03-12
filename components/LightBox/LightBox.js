@@ -1,6 +1,8 @@
 import React from "react";
-import { Dialog, Box } from "@mui/material";
+import { Dialog, Box, IconButton } from "@mui/material";
+import { Close } from "@mui/icons-material";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import styled from "styled-components";
 
 const LightBox = ({ children }) => {
   const contentRef = React.useRef(null);
@@ -32,9 +34,18 @@ const LightBox = ({ children }) => {
             </Box>
           </TransformComponent>
         </TransformWrapper>
+        <CloseButton onClick={handleClose}>
+          <Close fontSize="small" />
+        </CloseButton>
       </Dialog>
     </>
   );
 };
+
+const CloseButton = styled(IconButton)`
+  position: absolute;
+  top: 8px;
+  right: 8px;
+`;
 
 export default LightBox;

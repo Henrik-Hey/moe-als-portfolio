@@ -55,6 +55,8 @@ export default function Shiba() {
                 want to spend time looking at hundreds of options, when they can
                 be presented with a handful of good ones.
               </Typography>
+              <br />
+              <br />
             </Grid>
             <Grid item xs={12} md={2} />
             <Grid item xs={12} md={5}>

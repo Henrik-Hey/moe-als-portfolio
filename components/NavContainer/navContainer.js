@@ -7,14 +7,79 @@ import { useMediaQuery, useTheme, Container } from "@mui/material";
 const NavContainer = ({ position = "absolute", color }) => {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  const isDesktop = useMediaQuery(theme.breakpoints.up("sm"), {
-    noSsr: true,
-  });
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"), {});
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
-    document.body.style.overflowY = open && !isDesktop ? "hidden" : "auto";
-  }, [open, isDesktop]);
+    document.body.style.overflowY = open && !isMobile ? "hidden" : "auto";
+  }, [open, isMobile]);
+
+  const content = React.useMemo(() => {
+    if (!isMobile) {
+      return (
+        <NavLinkContainer>
+          <NavLink href="/" $color={color}>
+            Home
+          </NavLink>
+          <ProjectsDropdown $color={color}>
+            <span>Projects</span>
+            <DropdownContent>
+              <li>
+                <NavLink href="/shiba" $color={color}>
+                  Shiba
+                </NavLink>
+              </li>
+              <li>
+                <NavLink href="/pochui" $color={color}>
+                  Pochui
+                </NavLink>
+              </li>
+            </DropdownContent>
+          </ProjectsDropdown>
+          <NavLink
+            target="_blank"
+            rel="noreferrer"
+            href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:62fd54a1-5871-3c47-9038-56fdb6539289"
+            $color={color}
+          >
+            Resumé
+          </NavLink>
+          <NavLink href="/about" $color={color}>
+            About
+          </NavLink>
+        </NavLinkContainer>
+      );
+    }
+    return (
+      <>
+        <MobileNavLinkContainer $open={open}>
+          <NavLink href="/" $color={color}>
+            Home
+          </NavLink>
+          <NavLink href="/shiba" $color={color}>
+            Shiba
+          </NavLink>
+          <NavLink href="/pochui" $color={color}>
+            Pochui
+          </NavLink>
+          <NavLink
+            target="_blank"
+            rel="noreferrer"
+            href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:62fd54a1-5871-3c47-9038-56fdb6539289"
+            $color={color}
+          >
+            Resumé
+          </NavLink>
+          <NavLink href="/about" $color={color}>
+            About
+          </NavLink>
+        </MobileNavLinkContainer>
+        <NavLinkContainer>
+          <Hamburger toggled={open} toggle={setOpen} color="#1E88E5" />
+        </NavLinkContainer>
+      </>
+    );
+  }, [color, isMobile, open]);
 
   return (
     <StyledContainer maxWidth="lg">
@@ -28,67 +93,7 @@ const NavContainer = ({ position = "absolute", color }) => {
             height={80}
           />
         </LogoContainer>
-        {isDesktop ? (
-          <NavLinkContainer>
-            <NavLink href="/" $color={color}>
-              Home
-            </NavLink>
-            <ProjectsDropdown $color={color}>
-              <span>Projects</span>
-              <DropdownContent>
-                <li>
-                  <NavLink href="/shiba" $color={color}>
-                    Shiba
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink href="/pochui" $color={color}>
-                    Pochui
-                  </NavLink>
-                </li>
-              </DropdownContent>
-            </ProjectsDropdown>
-            <NavLink
-              target="_blank"
-              rel="noreferrer"
-              href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:62fd54a1-5871-3c47-9038-56fdb6539289"
-              $color={color}
-            >
-              Resumé
-            </NavLink>
-            <NavLink href="/about" $color={color}>
-              About
-            </NavLink>
-          </NavLinkContainer>
-        ) : (
-          <>
-            <MobileNavLinkContainer $open={open}>
-              <NavLink href="/" $color={color}>
-                Home
-              </NavLink>
-              <NavLink href="/shiba" $color={color}>
-                Shiba
-              </NavLink>
-              <NavLink href="/pochui" $color={color}>
-                Pochui
-              </NavLink>
-              <NavLink
-                target="_blank"
-                rel="noreferrer"
-                href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:62fd54a1-5871-3c47-9038-56fdb6539289"
-                $color={color}
-              >
-                Resumé
-              </NavLink>
-              <NavLink href="/about" $color={color}>
-                About
-              </NavLink>
-            </MobileNavLinkContainer>
-            <NavLinkContainer>
-              <Hamburger toggled={open} toggle={setOpen} color="#1E88E5" />
-            </NavLinkContainer>
-          </>
-        )}
+        {content}
       </NavContent>
     </StyledContainer>
   );
