@@ -16,7 +16,7 @@ const StyleGuide = ({
       <Row>
         <RowLabel>
           <Typography variant="h6" fontWeight={700} color={color}>
-            Colors
+            Colours
           </Typography>
         </RowLabel>
         <RowData>

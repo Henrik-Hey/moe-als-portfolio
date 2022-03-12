@@ -10,6 +10,7 @@ import StyleGuide from "../components/StyleGuide/StyleGuide";
 import ItemCarousel from "../components/Carousel/Carousel";
 import Footer from "../components/Footer/Footer";
 import FadeIn from "../components/FadeIn/FadeIn";
+import LightBox from "../components/LightBox/LightBox";
 import styled from "styled-components";
 
 import UserStudyPrep from "../data/shiba/UserStudyPrep";
@@ -61,26 +62,20 @@ export default function Shiba() {
                 <Typography component="span" fontWeight={600} color="#FC0202">
                   Challenges:
                 </Typography>
-                <ul>
-                  <li>
-                    Create a unique identity for a new food delivery
-                    application.
-                  </li>
-                  <br />
-                  <li>
-                    Present a user -friendly interface that makes it even easier
-                    to pick what you’re craving.
-                  </li>
-                  <br />
-                  <li>
-                    Think of ways to make the user journey simple and rewarding.
-                  </li>
-                  <br />
-                  <li>
-                    Offer quick, real time solutions for users who are having
-                    trouble choosing.
-                  </li>
-                </ul>
+                <br />
+                <br />
+                Create a unique identity for a new food delivery application.
+                <br />
+                <br />
+                Present a user -friendly interface that makes it even easier to
+                pick what you’re craving.
+                <br />
+                <br />
+                Think of ways to make the user journey simple and rewarding.
+                <br />
+                <br />
+                Offer quick, real time solutions for users who are having
+                trouble choosing.
               </Typography>
             </Grid>
           </Grid>
@@ -98,22 +93,12 @@ export default function Shiba() {
             >
               Empathize
             </Typography>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              Creating{" "}
-              <Typography component="span" fontWeight={600} color="#FC0202">
-                Shiba Inu
-              </Typography>{" "}
-              from scratch, I had to ask myself a few questions, who is the
-              user, why would use this application, how large is this project
-              going to be, and how much of my time will I be spending conducting
-              user interviews and research before the deadline is up. After
-              gathering my ideas on paper, and creating some user personas and
-              Empathy maps — I Figured out the project scope.
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
+              I asked myself who the user was, why I would use this application,
+              how big this project would be, and how much of my time I would
+              spend conducting user interviews and research before the deadline.
+              Then, after gathering my ideas on paper and creating user personas
+              and empathy maps — I Figured out the project scope.
             </Typography>
             <SectionSubTitle component="p" mt={4}>
               1. User Personas
@@ -167,10 +152,10 @@ export default function Shiba() {
                   </Box>
                 </Box>
                 <Typography component="p">
-                  Kendrick is a college student with a busy schedule, he often
+                  Kendrick is a college student with a busy schedule. He often
                   studies from home and doesn&apos;t have much time to get out.
-                  When his family isn&apos;t home he likes ordering traditional
-                  Korean or Japanese food delivery.
+                  He likes ordering traditional Korean or Japanese food delivery
+                  when his family isn&apos;t home.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={1} />
@@ -222,11 +207,11 @@ export default function Shiba() {
                   </Box>
                 </Box>
                 <Typography component="p">
-                  Syra is a Marketing lead at a design firm, a slight vision
-                  problem that makes her unable to read small text, she uses
-                  glasses when needed. Syra has a freelance gig on the side, so
-                  she doesn&apos;t like cooking over the weekends, she would
-                  like to save time cooking by ordering.
+                  Syra is a Marketing Lead at a design firm. She has a minor
+                  vision problem that makes it difficult to read small text, so
+                  she uses glasses when needed. Syra has a freelance gig on the
+                  side, so she doesn&apos;t like cooking over the weekends. She
+                  would like to save time cooking by ordering.
                 </Typography>
               </Grid>
             </Grid>
@@ -361,16 +346,11 @@ export default function Shiba() {
             >
               Define
             </Typography>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              This stage was very important to do right in order to understand
-              what problems the future user might face, and how they could be
-              avoided. I started by making some user journey maps and problem
-              statements to define some challenges the users would run into.
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
+              This stage was crucial for understanding what problems the future
+              user might face and how users could avoid them. I started by
+              making user journey maps and problem statements to define some
+              challenges the users would run across.
             </Typography>
             <SectionSubTitle component="p" my={4}>
               1. User journey map
@@ -505,16 +485,31 @@ export default function Shiba() {
             <SectionSubTitle component="p" my={4}>
               3. Competitive audit
             </SectionSubTitle>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              This stage was very important to do right in order to understand
-              what problems the future user might face, and how they could be
-              avoided. I started by making some user journey maps and problem
-              statements to define some challenges the users would run into.
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
+              After completing those initial design stages, it was time to
+              create a competitive audit that highlighted similar apps, <br />{" "}
+              what they did right, what I could learn, and what I should avoid.
+              Find the full audit right{" "}
+              <Typography
+                fontWeight={700}
+                color="#1E88E5"
+                component="a"
+                href="https://docs.google.com/spreadsheets/d/1ghNDETYsR1Yd9nslyI37-0Sm0TnXJSZbXT4BLwKl0P8/edit?usp=sharing&resourcekey=0-V2FFh9_zfhvCjvv7P1Ryow"
+                sx={{ textDecoration: "none", underline: "none" }}
+              >
+                here
+              </Typography>{" "}
+              and the written report right{" "}
+              <Typography
+                fontWeight={700}
+                color="#1E88E5"
+                component="a"
+                href="https://docs.google.com/document/d/1zn1qoIHVt0ZFpG1tYanGYSyPlmO-30bzDltCR_PFnaY/edit?usp=sharing"
+                sx={{ textDecoration: "none", underline: "none" }}
+              >
+                over here
+              </Typography>
+              .
             </Typography>
             <CustomTable
               headerColor="#FCAC53"
@@ -580,16 +575,11 @@ export default function Shiba() {
             >
               Ideate
             </Typography>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
               After completing my previous research, I decided to look more into
-              user problems and solutions by doing a few more exercises. I
-              created a few ‘how might we’ statements, and I followed that up by
-              creating the site’s information architecture.
+              user problems and solutions by doing more exercises. First, I
+              created a few ‘how might we’ statements, followed by making the
+              site’s information architecture.
             </Typography>
             <SectionSubTitle component="p" my={4}>
               1. How might we statements
@@ -673,25 +663,22 @@ export default function Shiba() {
               2. Information architecture
             </SectionSubTitle>
             <Box my={10}>
-              <Image
-                priority
-                src="/images/shiba/architecture.png"
-                alt="Picture of the information architecture"
-                layout="responsive"
-                width="1164"
-                height="339"
-              />
+              <LightBox>
+                <Image
+                  priority
+                  src="/images/shiba/architecture.png"
+                  alt="Picture of the information architecture"
+                  layout="responsive"
+                  width="1164"
+                  height="339"
+                />
+              </LightBox>
             </Box>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              Lastly, to wrap the ideate phase of the project - I decided it was
-              time to start drawing things out on paper. This meant getting
-              ready to create physical and digital wireframes. I also decided to
-              start sketching out Shiba’s logo during this stage.
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
+              Lastly, to wrap up the ideate phase of the project - I decided it
+              was time to start drawing things out on paper. So I created
+              physical and digital wireframes and decided to start sketching out
+              Shiba’s logo during this stage.
             </Typography>
             <SectionSubTitle component="p" my={4}>
               1. Physical wireframes
@@ -699,14 +686,16 @@ export default function Shiba() {
           </Container>
           <WhiteBackdrop my={10}>
             <Container maxWidth="md">
-              <Image
-                priority
-                src="/images/shiba/paperwireframes.png"
-                alt="Picture of the information architecture"
-                layout="responsive"
-                width="1164"
-                height="888"
-              />
+              <LightBox>
+                <Image
+                  priority
+                  src="/images/shiba/paperwireframes.png"
+                  alt="Picture of the information architecture"
+                  layout="responsive"
+                  width="1164"
+                  height="888"
+                />
+              </LightBox>
             </Container>
           </WhiteBackdrop>
           <Container maxWidth="md">
@@ -714,31 +703,35 @@ export default function Shiba() {
               2. Digital wireframes
             </SectionSubTitle>
             <Box my={10}>
-              <Image
-                priority
-                src="/images/shiba/digitalwireframes.png"
-                alt="Picture of the information architecture"
-                layout="responsive"
-                width="1164"
-                height="733"
-              />
+              <LightBox>
+                <Image
+                  priority
+                  src="/images/shiba/digitalwireframes.png"
+                  alt="Picture of the information architecture"
+                  layout="responsive"
+                  width="1164"
+                  height="733"
+                />
+              </LightBox>
             </Box>
           </Container>
           <Container maxWidth="md">
             <SectionSubTitle component="p" my={4}>
-              3. Shiba inital logo sketches
+              3. Shiba initial logo sketches
             </SectionSubTitle>
           </Container>
           <WhiteBackdrop my={10}>
             <Container maxWidth="md">
-              <Image
-                priority
-                src="/images/shiba/paperlogo.png"
-                alt="Picture of the information architecture"
-                layout="responsive"
-                width="1164"
-                height="873"
-              />
+              <LightBox>
+                <Image
+                  priority
+                  src="/images/shiba/paperlogo.png"
+                  alt="Picture of the information architecture"
+                  layout="responsive"
+                  width="1164"
+                  height="873"
+                />
+              </LightBox>
             </Container>
           </WhiteBackdrop>
         </DarkGrey>
@@ -755,22 +748,17 @@ export default function Shiba() {
             >
               Prototype
             </Typography>
-            <Typography variant="body1" component="p" textAlign="center">
+            <Typography variant="body1" component="p" textAlign="left">
               With all the user research completed, and the wireframes drawn out
-              and mocked up, it was time to prototype a basic user journey for
-              testing, doing this correctly allowed me to get a lot of valuable
-              feedback on some design, and userflow errors that I made.
+              and mocked up, it was time to prototype a primary user journey for
+              testing. Doing this allowed me to get valuable feedback on some
+              design and user flow errors.
             </Typography>
             <br />
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              I started off by doing wireflow prototypes, and then I followed
-              that up by doing some much needed preperation for my user studies
-              and interviews.
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
+              I started by doing wire flow prototypes, and then I followed that
+              up by doing some much-needed preparation for my user studies and
+              interviews. Check out the full document here.
             </Typography>
             <SectionSubTitle component="p" my={4}>
               1. wireflow
@@ -778,14 +766,16 @@ export default function Shiba() {
           </Container>
           <DarkGrey py={4}>
             <Container maxWidth="md">
-              <Image
-                priority
-                src="/images/shiba/wireflow.png"
-                alt="Picture of the information architecture"
-                layout="responsive"
-                width="1164"
-                height="709"
-              />
+              <LightBox>
+                <Image
+                  priority
+                  src="/images/shiba/wireflow.png"
+                  alt="Picture of the information architecture"
+                  layout="responsive"
+                  width="1164"
+                  height="709"
+                />
+              </LightBox>
             </Container>
           </DarkGrey>
           <Box my={4}>
@@ -836,7 +826,7 @@ export default function Shiba() {
                       Pain Points
                     </Typography>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFF8A7">
                       <StickyNoteText>
                         Account creation is missing a few information fields
@@ -844,21 +834,21 @@ export default function Shiba() {
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFF8A7">
                       <StickyNoteText>
                         Welcome screen after the creation is uneeded
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFF8A7">
                       <StickyNoteText>
                         Overall app is missing a lot of accessibility options
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFF8A7">
                       <StickyNoteText>
                         Having a username for this type of app doesn’t make a
@@ -867,7 +857,7 @@ export default function Shiba() {
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFF8A7">
                       <StickyNoteText>
                         Consider adding sign-in partners as an accommodation
@@ -892,12 +882,14 @@ export default function Shiba() {
                       Positive Feedback
                     </Typography>
                   </Grid>
-                  <Grid item sx={{ height: "100%", width: "100%" }}>
+                  <Grid item xs={5} sm={10}>
                     <StickyNote background="#FF8585">
                       <StickyNoteText>
                         Interface is clean and there’s good whitespace usage
                       </StickyNoteText>
                     </StickyNote>
+                  </Grid>
+                  <Grid item xs={5} sm={10}>
                     <StickyNote background="#FF8585">
                       <StickyNoteText>
                         Good use of photo elements to make the app less boring
@@ -921,7 +913,7 @@ export default function Shiba() {
                       Consider changing / adding
                     </Typography>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFC17C">
                       <StickyNoteText>
                         Add a dropdown under the address book for easier access
@@ -929,16 +921,16 @@ export default function Shiba() {
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFC17C">
                       <StickyNoteText>
                         Add a view all button for sections, ex; this week’s
-                        deals would direct you to a seperate page with other
+                        deals will direct you to a seperate page with other
                         deals.
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFC17C">
                       <StickyNoteText>
                         Look into accessibility options and see how you would go
@@ -947,7 +939,7 @@ export default function Shiba() {
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFC17C">
                       <StickyNoteText>
                         Re-work the food customization system into something
@@ -955,7 +947,7 @@ export default function Shiba() {
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFC17C">
                       <StickyNoteText>
                         Change the structure of the registration and login forms
@@ -995,46 +987,58 @@ export default function Shiba() {
               <Typography
                 variant="body1"
                 component="p"
-                textAlign="center"
+                textAlign="left"
                 mb={10}
               >
                 After compiling all my research, insights, and notes from the
-                user studies, I got to work and I started creating the revised
+                user studies, I got to work, and I started creating the revised
                 hi-fi mockups and prototypes. This part took me the longest
-                because I do tend to dwell on some designs until they’re as
-                pixel perfect as possible, but I was happy with the overall
-                results.
+                because I tend to dwell on some designs until they’re up to my
+                standard, but I was happy with the overall results.
               </Typography>
+              <Box my={4}>
+                <LightBox>
+                  <video autoPlay muted loop width="100%">
+                    <source src="/videos/shiba.webm" type="video/webm" />
+                  </video>
+                </LightBox>
+              </Box>
               <Box mb={4}>
-                <Image
-                  priority
-                  src="/images/shiba/shibapresentation.png"
-                  alt=""
-                  role="presentation"
-                  layout="responsive"
-                  width="1164"
-                  height="573"
-                />
+                <LightBox>
+                  <Image
+                    priority
+                    src="/images/shiba/shibapresentation.png"
+                    alt=""
+                    role="presentation"
+                    layout="responsive"
+                    width="1164"
+                    height="573"
+                  />
+                </LightBox>
               </Box>
               <Box my={4}>
-                <Image
-                  priority
-                  src="/images/shiba/shibaloginsignup.png"
-                  alt="Picture of the shibas login and signup screens"
-                  layout="responsive"
-                  width="1164"
-                  height="443"
-                />
+                <LightBox>
+                  <Image
+                    priority
+                    src="/images/shiba/shibaloginsignup.png"
+                    alt="Picture of the shibas login and signup screens"
+                    layout="responsive"
+                    width="1164"
+                    height="443"
+                  />
+                </LightBox>
               </Box>
               <Box my={4}>
-                <Image
-                  priority
-                  src="/images/shiba/shibaapp.png"
-                  alt="Picture of the shiba app"
-                  layout="responsive"
-                  width="1164"
-                  height="703"
-                />
+                <LightBox>
+                  <Image
+                    priority
+                    src="/images/shiba/shibaapp.png"
+                    alt="Picture of the shiba app"
+                    layout="responsive"
+                    width="1164"
+                    height="703"
+                  />
+                </LightBox>
               </Box>
             </Container>
           </Box>
@@ -1052,20 +1056,15 @@ export default function Shiba() {
             >
               Style guide
             </Typography>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
               Since I decided to go with a mascot logo design, I figured it
-              would be best to expirment with a fun color palette. The red and
-              the yellow went well together, and I added in the brown as an
-              accent color to make the logo stand out even more. For the
-              typeface, I wanted to limit myself to only one selection, and see
-              how far I could get with it - It was a bit challenging at times
-              because I felt like the design was missing something but I was
-              happy with the final result.
+              would be best to experiment with a fun colour palette. The red and
+              the yellow went well together, and I added brown as an accent
+              colour to make the logo stand out even more. I wanted to limit
+              myself to only one selection for the typeface and see how far I
+              could get with it - It was a bit challenging at times because I
+              felt like the design was missing something, but I was happy with
+              the final result.
             </Typography>
             <StyleGuide
               logoURL="/images/shiba/shibalogo.png"
@@ -1115,13 +1114,13 @@ export default function Shiba() {
             >
               Takeaways
             </Typography>
-            <Typography variant="body1" component="p" textAlign="center">
-              Working on Shiba was really fun and rewarding, I got to experiment
-              a lot with figma using auto layout and constraint features. It was
-              a really fun journey working through all the steps from the
-              beginning to the end, and even though I wasn’t able to fully
-              design and incorporate everything I wanted to add, I will most
-              likely visit this project down the line again.
+            <Typography variant="body1" component="p" textAlign="left">
+              Working on Shiba was fun and rewarding. I experimented a lot with
+              Figma using auto layout and constraint features. It was an
+              enjoyable journey working through all the steps from the beginning
+              to the end. Even though I couldn’t fully design and incorporate
+              everything I wanted to add, I will most likely visit this project
+              down the line again.
             </Typography>
           </Container>
         </Box>

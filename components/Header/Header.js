@@ -40,7 +40,7 @@ const Header = ({
                 <BrandLogo src={logoURL} alt="Logo" />
               </Box>
             </Container>
-            <Grid container spacing={6} minHeight="216px" height="fit-content">
+            <Grid container spacing={0} minHeight="216px" height="fit-content">
               <Grid
                 item
                 xs={12}
@@ -106,7 +106,7 @@ const Header = ({
 };
 
 const BrandLogo = styled.img`
-  width: 100%;
+  width: 80%;
 `;
 
 const Content = styled.div`
@@ -116,14 +116,14 @@ const Content = styled.div`
 `;
 
 const Headline = styled.h2`
-  font-size: 1rem;
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 16px;
   color: #fff;
   font-family: "Epilogue", sans-serif;
 `;
 
 const SubHeadline = styled.h3`
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 100;
   color: #fff;
   font-family: "Epilogue", sans-serif;

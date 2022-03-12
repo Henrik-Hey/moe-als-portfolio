@@ -10,6 +10,7 @@ import ItemCarousel from "../components/Carousel/Carousel";
 import StyleGuide from "../components/StyleGuide/StyleGuide";
 import Footer from "../components/Footer/Footer";
 import FadeIn from "../components/FadeIn/FadeIn";
+import LightBox from "../components/LightBox/LightBox";
 import styled from "styled-components";
 
 import UserStudyPrep from "../data/pochui/UserStudyPrep";
@@ -44,15 +45,14 @@ export default function Pochui() {
                 <Typography component="span" fontWeight={600} color="#1E88E5">
                   Pochui
                 </Typography>{" "}
-                is a social media platform that’s targeted towards
-                skateboarders, social media influencers, and artists who are
-                interested in growing their social following and online presence
-                and engagement.
+                is a social media platform targeted towards skateboarders,
+                social media influencers, and artists interested in growing
+                their social following and online presence and engagement.
               </Typography>
               <Typography component="p">
                 Pochui’s goal is to create a tight community for skateboard
                 enthusiasts. It’s a place where you can grow your audience and
-                business while making friends all across the world.
+                business while making friends worldwide.
               </Typography>
             </Grid>
             <Grid item xs={12} md={2} />
@@ -61,20 +61,16 @@ export default function Pochui() {
                 <Typography component="span" fontWeight={600} color="#1E88E5">
                   Challenges:
                 </Typography>
-                <ul>
-                  <li>
-                    Create a unique brand for a new social media application.
-                  </li>
-                  <br />
-                  <li>
-                    Successfully create a friendly and easy-to-use user
-                    interface that doesn’t overwhelm users.
-                  </li>
-                  <br />
-                  <li>
-                    Think of how to keep the application interesting and unique.
-                  </li>
-                </ul>
+                <br />
+                <br />
+                Create a unique brand for a new social media application.
+                <br />
+                <br />
+                Successfully create a friendly and easy-to-use user interface
+                that doesn’t overwhelm users.
+                <br />
+                <br />
+                Think of how to keep the application interesting and unique.
               </Typography>
             </Grid>
           </Grid>
@@ -92,19 +88,13 @@ export default function Pochui() {
             >
               Understanding users
             </SectionHeading>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              Much like my previous project - shiba, I had to ask myself a lot
-              of questions to make sure this was heading in the right direction.
-              I had to figure out how big this project was going to be, and how
-              much time I wanted to give myself to get through every stage. That
-              being said, I had to organize my time a lot better around this
-              time to ensure that I’m able to deliver results I’m happy with in
-              a shorter timeframe.
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
+              Much like my previous project - Shiba, I had to ask myself many
+              questions to make sure this was heading in the right direction. I
+              had to figure out how big this project would be and how much time
+              I wanted to give myself to get through every stage. I had to
+              organize my time a lot better to ensure that I could deliver
+              results I’m happy with within a shorter timeframe.
             </Typography>
             <SectionSubTitle component="p" my={4}>
               1. User Personas
@@ -609,16 +599,11 @@ export default function Pochui() {
             >
               Breaking down the problems we might face
             </SectionHeading>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              Defining potential user problems is a very important step - I took
-              my time applying the research from the previous stage to create
-              scenarios and problem statements in hopes of being able to see
-              things from the perspective of the user. This does not guarantee
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
+              Defining potential user problems is a crucial step - I took my
+              time applying the research from the previous stage to create
+              scenarios and problem statements in hopes of seeing things from
+              the perspective of the user. Of course, this does not guarantee
               perfection, but it’s a step in the right direction to ensure user
               testing goes smoothly in the later stages.
             </Typography>
@@ -662,18 +647,33 @@ export default function Pochui() {
             <SectionSubTitle component="p" my={4}>
               2. Competitive audit breakdown
             </SectionSubTitle>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              Understanding who our competition is gives us a lot of insight on
-              what we need to do, what we need to avoid, and it really sets the
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
+              Understanding who our competition is gives us a lot of insight
+              into what we need to do, what we need to avoid, and it sets the
               parameters for how deep this project will go. I took my time with
-              this step because it was relatively difficult finding competition
-              for this service provided. but after a few nights I had a complete
-              competitive audit, and audit report, complete!
+              this step because it was relatively tricky finding competition for
+              this service provided. But after a few nights, I had a complete
+              competitive{" "}
+              <Typography
+                fontWeight={700}
+                color="#1E88E5"
+                component="a"
+                href="https://docs.google.com/spreadsheets/d/1BoaaEu4jAAm0dcZltcKASWwIp8k4Ei3_Iyx68ZNUSRo/edit?usp=sharing"
+                sx={{ textDecoration: "none", underline: "none" }}
+              >
+                audit
+              </Typography>{" "}
+              and{" "}
+              <Typography
+                fontWeight={700}
+                color="#1E88E5"
+                component="a"
+                href="https://docs.google.com/document/d/11KH4iaUFuWTXn1ejbWVQCzLlhafvmoUnipDHtfscVng/edit?usp=sharing"
+                sx={{ textDecoration: "none", underline: "none" }}
+              >
+                audit report
+              </Typography>{" "}
+              complete!
             </Typography>
             <CustomTable
               headerColor="#1D1D1D"
@@ -740,16 +740,11 @@ export default function Pochui() {
             >
               Coming up with the gameplan
             </SectionHeading>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
-              Game plans are important, and for this project I needed one to
-              make sure that I’m designing and thinking of the right content for
-              the upcoming user testing trials. I started with basic ‘how might
-              we statments’questions, created a prioritization plan, and then
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
+              Game plans are essential, and for this project, I needed to make
+              sure that I was designing and thinking of the right content for
+              the upcoming user testing trials. So I started with basic ‘how
+              might we statements questions, created a prioritization plan, and
               moved on to the drawing board.
             </Typography>
             <SectionSubTitle component="p" my={4}>
@@ -834,21 +829,23 @@ export default function Pochui() {
               2. Prioritization plan
             </SectionSubTitle>
             <Typography variant="body1" component="p" mb={10}>
-              Plotting possible features onto a graph helped me plan out how to
+              Plotting possible features onto a graph helped me plan how to
               break my time down on what features. I was able to plan around the
-              mvp for user testing, and if I were to return to this project, I
+              MVP for user testing, and if I were to return to this project, I
               would have a list of features to go through and design for future
               mockups and versions.
             </Typography>
             <Box my={10}>
-              <Image
-                priority
-                src="/images/pochui/prioritizationplan.png"
-                alt="Picture of the prioritization plan"
-                layout="responsive"
-                width="1164"
-                height="569"
-              />
+              <LightBox>
+                <Image
+                  priority
+                  src="/images/pochui/prioritizationplan.png"
+                  alt="Picture of the prioritization plan"
+                  layout="responsive"
+                  width="1164"
+                  height="569"
+                />
+              </LightBox>
             </Box>
           </Container>
           <WhiteBackdrop py={4}>
@@ -858,30 +855,37 @@ export default function Pochui() {
               </SectionSubTitle>
               <Box my={10}>
                 <ItemCarousel>
-                  <Image
-                    priority
-                    src="/images/pochui/paper1.png"
-                    alt=""
-                    layout="responsive"
-                    width="1186"
-                    height="958"
-                  />
-                  <Image
-                    priority
-                    src="/images/pochui/paper2.png"
-                    alt=""
-                    layout="responsive"
-                    width="1181"
-                    height="885"
-                  />
-                  <Image
-                    priority
-                    src="/images/pochui/paper3.png"
-                    alt=""
-                    layout="responsive"
-                    width="1181"
-                    height="885"
-                  />
+                  <LightBox>
+                    <Image
+                      priority
+                      src="/images/pochui/paper1.png"
+                      alt=""
+                      layout="responsive"
+                      width="1186"
+                      height="958"
+                    />
+                  </LightBox>
+                  <LightBox>
+                    <Image
+                      priority
+                      src="/images/pochui/paper2.png"
+                      alt=""
+                      layout="responsive"
+                      width="1181"
+                      height="885"
+                    />
+                  </LightBox>
+
+                  <LightBox>
+                    <Image
+                      priority
+                      src="/images/pochui/paper3.png"
+                      alt=""
+                      layout="responsive"
+                      width="1181"
+                      height="885"
+                    />
+                  </LightBox>
                 </ItemCarousel>
               </Box>
             </Container>
@@ -892,22 +896,26 @@ export default function Pochui() {
             </SectionSubTitle>
             <Box my={10}>
               <ItemCarousel>
-                <Image
-                  priority
-                  src="/images/pochui/wireframe1.png"
-                  alt=""
-                  layout="responsive"
-                  width="1184"
-                  height="1093"
-                />
-                <Image
-                  priority
-                  src="/images/pochui/wireframe2.png"
-                  alt=""
-                  layout="responsive"
-                  width="1164"
-                  height="1033"
-                />
+                <LightBox>
+                  <Image
+                    priority
+                    src="/images/pochui/wireframe1.png"
+                    alt=""
+                    layout="responsive"
+                    width="1184"
+                    height="1093"
+                  />
+                </LightBox>
+                <LightBox>
+                  <Image
+                    priority
+                    src="/images/pochui/wireframe2.png"
+                    alt=""
+                    layout="responsive"
+                    width="1164"
+                    height="1033"
+                  />
+                </LightBox>
               </ItemCarousel>
             </Box>
           </Container>
@@ -925,7 +933,7 @@ export default function Pochui() {
             >
               Doing the tests and making it pretty
             </SectionHeading>
-            <Typography variant="body1" component="p" textAlign="center">
+            <Typography variant="body1" component="p" textAlign="left">
               Using the information from the previous stage, I was able to move
               into the user testing stage within a reasonable amount of time. I
               prepped my concepts, polished my wireflows, and started collecting
@@ -981,7 +989,7 @@ export default function Pochui() {
                       Pain Points
                     </Typography>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFF8A7">
                       <StickyNoteText>
                         User information requested in the form needs a bit of
@@ -989,14 +997,14 @@ export default function Pochui() {
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFF8A7">
                       <StickyNoteText>
                         The layout is a bit confusing, could use some polishing.
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFF8A7">
                       <StickyNoteText>
                         Some elements are unclear; considered working around
@@ -1004,7 +1012,7 @@ export default function Pochui() {
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#FFF8A7">
                       <StickyNoteText>
                         Missing information fields under the account creation
@@ -1030,13 +1038,15 @@ export default function Pochui() {
                       Positive Feedback
                     </Typography>
                   </Grid>
-                  <Grid item sx={{ height: "100%", width: "100%" }}>
+                  <Grid item xs={5} sm={10}>
                     <StickyNote background="#A7CFFF">
                       <StickyNoteText>
                         The concept is good; it’s interesting seeing an app like
                         this since there are no similar competitors.
                       </StickyNoteText>
                     </StickyNote>
+                  </Grid>
+                  <Grid item xs={5} sm={10}>
                     <StickyNote background="#A7CFFF">
                       <StickyNoteText>
                         Having a landing page that describes the product is a
@@ -1062,7 +1072,7 @@ export default function Pochui() {
                       Consider changing / adding
                     </Typography>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#A7EFFF">
                       <StickyNoteText>
                         Consider playing with the style of the page. Maybe a
@@ -1070,7 +1080,7 @@ export default function Pochui() {
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#A7EFFF">
                       <StickyNoteText>
                         A side navigation bar could make it easier to connect
@@ -1078,7 +1088,7 @@ export default function Pochui() {
                       </StickyNoteText>
                     </StickyNote>
                   </Grid>
-                  <Grid item xs={10} sm={5}>
+                  <Grid item xs={5} sm={5}>
                     <StickyNote background="#A7EFFF">
                       <StickyNoteText>
                         Footer is not needed in most parts, so you’ll probably
@@ -1118,42 +1128,54 @@ export default function Pochui() {
                 3. Doing the visual work
               </SectionSubTitle>
               <Typography variant="body1" component="p">
-                My favorite part has to be getting down to it and making things
-                visual, having a background in design allowed me to make a lot
-                of style choices that led this project to where it is right now
-                - below you can see a sample of some mockups for web and phone,
-                you can check out the full XD file{" "}
+                Using the information from the previous stage, I moved into the
+                user testing stage within a reasonable amount of time. Then, I
+                prepped my concepts, polished my wire flows, and started
+                collecting data that would help me create a high-fidelity
+                version of the product. Check out the full document{" "}
                 <Typography
                   fontWeight={700}
-                  color="325BDE"
+                  color="#1E88E5"
                   component="a"
-                  href="/"
+                  href="https://docs.google.com/document/d/1ZYEdGbxXUI05XgHx-he-1h9LDETNNlcdUa-kta5jp6U/edit?usp=sharing"
                   sx={{ textDecoration: "none", underline: "none" }}
                 >
-                  right here.
+                  here
                 </Typography>
+                .
               </Typography>
               <Box my={4}>
-                <Image
-                  priority
-                  src="/images/pochui/pochui1.png"
-                  alt=""
-                  role="presentation"
-                  layout="responsive"
-                  width="1164"
-                  height="635"
-                />
+                <LightBox>
+                  <video autoPlay muted loop width="100%">
+                    <source src="/videos/pochui.webm" type="video/webm" />
+                  </video>
+                </LightBox>
               </Box>
               <Box my={4}>
-                <Image
-                  priority
-                  src="/images/pochui/pochui2.png"
-                  alt=""
-                  role="presentation"
-                  layout="responsive"
-                  width="1164"
-                  height="1075"
-                />
+                <LightBox>
+                  <Image
+                    priority
+                    src="/images/pochui/pochui1.png"
+                    alt=""
+                    role="presentation"
+                    layout="responsive"
+                    width="1164"
+                    height="635"
+                  />
+                </LightBox>
+              </Box>
+              <Box my={4}>
+                <LightBox>
+                  <Image
+                    priority
+                    src="/images/pochui/pochui2.png"
+                    alt=""
+                    role="presentation"
+                    layout="responsive"
+                    width="1164"
+                    height="1075"
+                  />
+                </LightBox>
               </Box>
             </Container>
           </Box>
@@ -1171,18 +1193,13 @@ export default function Pochui() {
             >
               The final touches for pochui
             </SectionHeading>
-            <Typography
-              variant="body1"
-              component="p"
-              textAlign="center"
-              mb={10}
-            >
+            <Typography variant="body1" component="p" textAlign="left" mb={10}>
               For pochui, I went for a minimalist approach. I used a fun
-              illustration that the target market could relate to and I went
-              with an overly simple color palette to see how well I could design
-              being limited to two colors. Typography wise - Two typefaces,
-              roboto and zona pro. Both look great, straightforward, bold enough
-              to represent pochui :)
+              illustration that the target market could relate to, and I went
+              with an overly simple colour palette to see how well I could
+              design limited to two colours. Typography-wise, I limited myself
+              to two typefaces, Roboto and zona pro. Both look great,
+              straightforward, bold enough to represent pochui :)
             </Typography>
             <StyleGuide
               logoURL="/images/pochui/PochuiLogo2.png"
@@ -1232,14 +1249,14 @@ export default function Pochui() {
             >
               Final notes
             </SectionHeading>
-            <Typography variant="body1" component="p" textAlign="center">
-              Thank you for taking the time to look through this and I hope you
+            <Typography variant="body1" component="p" textAlign="left">
+              Thank you for taking the time to look through this, and I hope you
               enjoyed some of the content above. Working on pochui was a lot of
-              fun, and I decided to experiment with Adobe XD, it was a bit
+              fun, and I decided to experiment with Adobe XD; it was a bit
               harder to get used to compared to Figma. After a few weeks of hard
-              work I was able to get a solid set of designs down. It may be
-              nowhere near close to a full product launch, but hopefully I can
-              come back to this project one day!
+              work, I was able to get a solid set of designs down. It may be
+              nowhere near a full product launch, but hopefully, I can come back
+              to this project one day!
             </Typography>
           </Container>
         </Box>
