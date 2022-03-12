@@ -161,9 +161,9 @@ const MobileNavLinkContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #fafafa;
   overflow: hidden;
-  transition: all 1s ease-in-out;
+  transition: all 0.75s ease-in-out;
   clip-path: ${({ $open }) =>
     $open
       ? "circle(150% at calc(100% - 50px) 62.5px)"
