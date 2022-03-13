@@ -2,7 +2,7 @@ import React from "react";
 import { Dialog, Box, IconButton } from "@mui/material";
 import { Close } from "@mui/icons-material";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import styled from "styled-components";
+import { styled } from "@mui/system";
 
 const LightBox = ({ children }) => {
   const contentRef = React.useRef(null);

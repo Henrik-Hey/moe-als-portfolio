@@ -1,20 +1,21 @@
 import React from "react";
 import Image from "next/image";
-import styled from "styled-components";
+import { styled } from "@mui/system";
 import { Twirl as Hamburger } from "hamburger-react";
 import { useMediaQuery, useTheme, Container } from "@mui/material";
 
 const NavContainer = ({ position = "absolute", color }) => {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"), {});
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"), { noSSR: true });
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.style.overflowY = open && !isMobile ? "hidden" : "auto";
   }, [open, isMobile]);
 
-  const content = React.useMemo(() => {
+  const content = React.useCallback(() => {
+    if (typeof window === "undefined") return null;
     if (!isMobile) {
       return (
         <NavLinkContainer>
@@ -83,7 +84,7 @@ const NavContainer = ({ position = "absolute", color }) => {
 
   return (
     <StyledContainer maxWidth="lg">
-      <NavContent $position={position}>
+      <NavContent sx={{ position }}>
         <LogoContainer>
           <Image
             priority
@@ -93,7 +94,7 @@ const NavContainer = ({ position = "absolute", color }) => {
             height={80}
           />
         </LogoContainer>
-        {content}
+        {content()}
       </NavContent>
     </StyledContainer>
   );
@@ -103,20 +104,15 @@ const StyledContainer = styled(Container)`
   position: relative;
 `;
 
-const NavContent = styled.div`
-  position: ${(props) => props.$position};
+const NavContent = styled("div")`
   top: 0px;
   left: 0px;
   min-height: 130px;
   width: 100%;
   z-index: 1;
-
-  ${({ theme }) => theme.breakpoints.up("md")} {
-    position: ${(props) => props.$position};
-  }
 `;
 
-const LogoContainer = styled.div`
+const LogoContainer = styled("div")`
   position: absolute;
   left: 25px;
   top: 25px;
@@ -125,27 +121,11 @@ const LogoContainer = styled.div`
   z-index: 1;
 
   ${({ theme }) => theme.breakpoints.up("md")} {
-    left: 0px;
+    left: 0px !important;
   }
 `;
 
-const ShowDesktop = styled.div`
-  display: none;
-
-  ${({ theme }) => theme.breakpoints.up("md")} {
-    display: block;
-  }
-`;
-
-const ShowMobile = styled.div`
-  display: block;
-
-  ${({ theme }) => theme.breakpoints.up("md")} {
-    display: none;
-  }
-`;
-
-const NavLinkContainer = styled.div`
+const NavLinkContainer = styled("div")`
   position: absolute;
   top: 25px;
   right: 25px;
@@ -158,7 +138,7 @@ const NavLinkContainer = styled.div`
   z-index: 10;
 `;
 
-const MobileNavLinkContainer = styled.div`
+const MobileNavLinkContainer = styled("div")`
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -175,7 +155,7 @@ const MobileNavLinkContainer = styled.div`
       : "circle(0% at calc(100% - 50px) 62.5px)"};
 `;
 
-const NavLink = styled.a`
+const NavLink = styled("a")`
   font-family: "Epilogue", sans-serif;
   margin-left: 16px;
   font-style: normal;
@@ -198,7 +178,7 @@ const NavLink = styled.a`
   }
 `;
 
-const DropdownContent = styled.ul`
+const DropdownContent = styled("ul")`
   position: absolute;
   top: 0px;
   list-style-type: none;
@@ -212,18 +192,18 @@ const DropdownContent = styled.ul`
   & > li {
     margin-top: 10px;
 
-    & > ${NavLink} {
+    & > a {
       margin-left: 0px;
       transition: all 0.3s;
     }
 
-    &:hover > ${NavLink} {
+    &:hover > a {
       margin-left: 8px;
     }
   }
 `;
 
-const ProjectsDropdown = styled.div`
+const ProjectsDropdown = styled("div")`
   position: relative;
   display: inline-block;
   font-family: "Epilogue", sans-serif;
@@ -248,7 +228,7 @@ const ProjectsDropdown = styled.div`
   &:hover,
   &:focus,
   &:focus-within {
-    ${DropdownContent} {
+    ul {
       max-height: calc(3em * 3);
     }
   }
