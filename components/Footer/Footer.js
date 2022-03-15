@@ -21,19 +21,19 @@ const Footer = ({ backgroundColor = "#000" }) => {
               NAVIGATION
             </Typography>
             <Link href="/" passHref>
-              <Typography variant="body2" color="white">
+              <StyledNextLink variant="body2" color="white">
                 Home
-              </Typography>
+              </StyledNextLink>
             </Link>
             <Link href="/shiba" passHref>
-              <Typography variant="body2" color="white">
+              <StyledNextLink variant="body2" color="white">
                 Shiba
-              </Typography>
+              </StyledNextLink>
             </Link>
             <Link href="/pochui" passHref>
-              <Typography variant="body2" color="white">
+              <StyledNextLink variant="body2" color="white">
                 Pochui
-              </Typography>
+              </StyledNextLink>
             </Link>
           </Grid>
           <Grid item xs={10} md={2}>
@@ -53,7 +53,7 @@ const Footer = ({ backgroundColor = "#000" }) => {
               target="_blank"
             >
               <Typography variant="body2" color="white">
-                Instagram (design)
+                design
               </Typography>
             </StyledLink>
             <StyledLink
@@ -61,7 +61,7 @@ const Footer = ({ backgroundColor = "#000" }) => {
               target="_blank"
             >
               <Typography variant="body2" color="white">
-                instagram (photography)
+                photography
               </Typography>
             </StyledLink>
           </Grid>
@@ -79,8 +79,25 @@ const Footer = ({ backgroundColor = "#000" }) => {
   );
 };
 
+const StyledNextLink = styled(Typography)`
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+`;
+
 const StyledLink = styled.a`
   text-decoration: none;
+  cursor: pointer;
+  color: white;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 `;
 
 export default Footer;

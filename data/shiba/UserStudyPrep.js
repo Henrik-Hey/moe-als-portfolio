@@ -19,13 +19,12 @@ const UserStudyPrep = [
     title: "Research questions",
     content: (
       <>
-        &gt; Time on task
+        What can we learn from the way users navigate the app, and how they go
+        about ordering food?
         <br />
         <br />
-        &gt; Drop off rates
-        <br />
-        <br />
-        &gt; System usability scale
+        Are there any parts throughout the user journey where the users are
+        getting stuck, or experimenting with any issues?
       </>
     ),
   },

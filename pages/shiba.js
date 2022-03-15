@@ -868,7 +868,7 @@ export default function Shiba() {
                     </StickyNote>
                   </Grid>
                 </Grid>
-                <Grid item container columns={10} sx={10} sm={5} md={2}>
+                <Grid item container columns={10} xs={10} sm={5} md={2}>
                   <Grid
                     item
                     xs={10}
