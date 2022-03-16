@@ -32,6 +32,20 @@ const UserStudyPrep = [
     title: "KPI",
     content: (
       <>
+        &gt; Time on task
+        <br />
+        <br />
+        &gt; Drop off rates
+        <br />
+        <br />
+        &gt; System usability scale
+      </>
+    ),
+  },
+  {
+    title: "Methodology",
+    content: (
+      <>
         Unmoderated usability study
         <br />
         <br />
@@ -45,7 +59,7 @@ const UserStudyPrep = [
     ),
   },
   {
-    title: "Methodology",
+    title: "Participants",
     content: (
       <>
         Participants are all over 18 years old, They either order food, eat
@@ -61,7 +75,7 @@ const UserStudyPrep = [
     ),
   },
   {
-    title: "Participants",
+    title: "Script intro",
     content: (
       <>
         Before we begin, do I have your consent to take both audio and video
@@ -73,30 +87,19 @@ const UserStudyPrep = [
     ),
   },
   {
-    title: "Script intro",
-    content: (
-      <>
-        Describe the city or town you live in?
-        <br /> <br />
-        How often do you find yourself ordering takeout a week?
-        <br /> <br />
-        Do you have enough time to cook every night?
-        <br /> <br />
-        Can you tell me more about your day-to-day routine?
-      </>
-    ),
-  },
-  {
     title: "Script questions",
     content: (
       <>
-        Title: User wants, needs, expectations, and pain points with food
-        delivery applications. <br />
+        Describe the city or town you live in?
         <br />
-        Author: Moe Als - UX visual designer <br />
         <br />
-        Goals: Figure out if users are able to navigate easily through the app,
-        and understand what some user likes, and dislikes are.
+        How often do you find yourself ordering takeout a week?
+        <br />
+        <br />
+        Do you have enough time to cook every night?
+        <br />
+        <br />
+        Can you tell me more about your day-to-day routine?
       </>
     ),
   },
