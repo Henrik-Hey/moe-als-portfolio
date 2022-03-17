@@ -10,6 +10,7 @@ import Intro from "../sections/intro";
 import Shiba from "../sections/shiba";
 import Pochui from "../sections/pochui";
 import Apollo from "../sections/apollo";
+import ContactMe from "../sections/contact";
 
 export default function Home() {
   const [container, setContainer] = useState(null);
@@ -39,6 +40,11 @@ export default function Home() {
       <FadeIn>
         <Section name="APOLLO" style={{ marginBottom: "64px" }}>
           <Apollo />
+        </Section>
+      </FadeIn>
+      <FadeIn>
+        <Section name="CONTACT ME">
+          <ContactMe />
         </Section>
       </FadeIn>
       <Footer backgroundColor="#F8F9FB" textColor="#1E88E5" />
