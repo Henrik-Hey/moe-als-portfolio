@@ -3,10 +3,14 @@ import { Container, Typography, Grid, Box } from "@mui/material";
 import Link from "next/link";
 import styled from "styled-components";
 
-const Footer = ({ backgroundColor = "#000", textColor = "#fff" }) => {
+const Footer = ({
+  backgroundColor = "#000",
+  textColor = "#fff",
+  maxWidth = "md",
+}) => {
   return (
     <Box backgroundColor={backgroundColor} py={8} position="relative">
-      <Container maxWidth="md">
+      <Container maxWidth={maxWidth}>
         <Grid container spacing={3} columns={10}>
           <Grid item xs={10} md={4}>
             <Typography variant="body1" color={textColor} fontWeight={700}>

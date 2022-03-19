@@ -7,7 +7,8 @@ import styled from "styled-components";
 const Apollo = () => {
   return (
     <GridSegment
-      title="PRO 3 - APOLLO"
+      title="PREV SECTION - POCHUI"
+      footer="NEXT SECTION - CONTACT"
       content={
         <>
           <ProjectBrief
@@ -15,13 +16,13 @@ const Apollo = () => {
             notStarted
             brief={
               <>
-                Re brand Apollo completely, some design elements are there, but
-                changes are needed to make the application look more modern, up
-                to date, and user-friendly.
+                Re-brand Apollo completely. Some design elements are there, but
+                changes are needed to make the application look more modern,
+                up-to-date, and user-friendly.
                 <br />
                 <br />
-                Apollo allows users to teach, and learn classes online at no
-                cost, it’s a modern tool that can be used to learn new skills
+                Apollo allows users to teach and learn classes online at no
+                cost. It’s a modern tool that can be used to learn new skills
                 and hobbies every day.
               </>
             }

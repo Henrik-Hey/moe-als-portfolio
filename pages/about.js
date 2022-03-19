@@ -3,6 +3,7 @@ import Section from "../components/Section/Section";
 import { createGlobalStyle } from "styled-components";
 import NavContainer from "../components/NavContainer/navContainer";
 import Backdrop from "../components/Backdrop/Backdrop";
+import Footer from "../components/Footer/Footer";
 
 import AboutSection from "../sections/about";
 import About2Section from "../sections/about2";
@@ -21,12 +22,13 @@ export default function About() {
       <Backdrop container={container} />
       <GlobalStyles />
       <NavContainer position="relative" />
-      <Section ref={aboutRef} name="Intro">
+      <Section ref={aboutRef} name="ABOUT">
         <AboutSection />
       </Section>
-      <Section ref={about2Reft} name="SHIBA">
+      <Section ref={about2Reft} name="DESIGN WORK">
         <About2Section />
       </Section>
+      <Footer backgroundColor="#F8F9FB" textColor="#1E88E5" maxWidth="lg" />
     </>
   );
 }

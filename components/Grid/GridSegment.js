@@ -6,24 +6,30 @@ const GridSegment = ({
   content,
   image,
   title,
+  footer = "",
   contentOrder,
   imageOrder,
   align = "flex-end",
 }) => {
   return (
     <Container maxWidth="lg">
-      <Grid container>
+      <Grid container spacing={{ sm: 2, md: 0 }}>
         <Grid item xs={12} sm={6} md={6} display="flex" order={contentOrder}>
           <ImageBlock mt={4} mb={4} flex={1}>
             {image}
           </ImageBlock>
         </Grid>
         <Grid item xs={12} sm={6} md={6} order={imageOrder}>
-          <StyledContentBlock my={4} alignItems={align}>
+          <StyledContentBlock
+            my={4}
+            maxHeight="calc(100% - 60px)"
+            $alignItems={align}
+          >
             <Title>{title}</Title>
             <Box flex="1" display="flex" alignItems="center">
               {content}
             </Box>
+            <Title>{footer}</Title>
           </StyledContentBlock>
         </Grid>
       </Grid>
@@ -36,11 +42,13 @@ const StyledContentBlock = styled(Box)`
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
+  align-items: flex-start;
 
   ${({ theme }) => theme.breakpoints.up("md")} {
     /* padding: 0px 100px; */
-    min-height: 90vh;
+    min-height: 70vh;
     width: 100%;
+    align-items: ${({ $alignItems }) => $alignItems};
   }
 `;
 

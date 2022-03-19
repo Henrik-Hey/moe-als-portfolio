@@ -21,8 +21,9 @@ const ProjectBrief = ({
       <br />
       <br />
       <br />
-      <Heading>Project timeline:</Heading> {timeline} <br />
-      <Heading>Roles:</Heading> {roles}
+      <Heading>Project timeline: {timeline} </Heading>
+      <br />
+      <Heading>Roles: {roles}</Heading>
       <br />
       <br />
       <br />
@@ -42,9 +43,9 @@ const ContentContainer = styled.div`
 `;
 
 const Heading = styled.span`
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Epilogue", sans-serif;
-  color: ${({ theme }) => theme.palette.primary.main};
+  color: #000;
 `;
 
 const StyledLink = styled(Link)`

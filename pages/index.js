@@ -47,7 +47,7 @@ export default function Home() {
           <ContactMe />
         </Section>
       </FadeIn>
-      <Footer backgroundColor="#F8F9FB" textColor="#1E88E5" />
+      <Footer backgroundColor="#F8F9FB" textColor="#1E88E5" maxWidth="lg" />
     </>
   );
 }

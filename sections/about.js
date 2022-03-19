@@ -16,12 +16,11 @@ const AboutSection = () => {
           <br />
           <br />
           Prior to my UX career, I was a <b>graphic designer</b> who specialized
-          in
-          <b>brand identity</b> and <b>web design</b>. I always enjoyed creating
-          visual elements and being in that position allowed me to do work for
-          different clients and businesses. I did everything design related, if
-          it was a website, a poster, a brochure, or even a business card, I was
-          always down to design it.
+          in <b>brand identity</b> and <b>web design</b>. I always enjoyed
+          creating visual elements and being in that position allowed me to do
+          work for different clients and businesses. I did everything design
+          related, if it was a website, a poster, a brochure, or even a business
+          card, I was always down to design it.
           <br />
           <br />
           After 3 years of freelance work, I realized that I wasn’t meeting the

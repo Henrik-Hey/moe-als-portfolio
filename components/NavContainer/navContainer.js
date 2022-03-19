@@ -40,7 +40,7 @@ const NavContainer = ({ position = "absolute", color }) => {
           <NavLink
             target="_blank"
             rel="noreferrer"
-            href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:62fd54a1-5871-3c47-9038-56fdb6539289"
+            href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:b309da70-aa4d-3546-8d2a-2dd40e3135d9"
             $color={color}
           >
             Resumé
@@ -66,7 +66,7 @@ const NavContainer = ({ position = "absolute", color }) => {
           <NavLink
             target="_blank"
             rel="noreferrer"
-            href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:62fd54a1-5871-3c47-9038-56fdb6539289"
+            href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:b309da70-aa4d-3546-8d2a-2dd40e3135d9"
             $color={color}
           >
             Resumé
@@ -84,7 +84,13 @@ const NavContainer = ({ position = "absolute", color }) => {
 
   return (
     <StyledContainer maxWidth="lg">
-      <NavContent sx={{ position }}>
+      <NavContent
+        sx={{
+          position,
+          left: position === "absolute" ? "32px" : "0px",
+          width: position === "absolute" ? "calc(100 - 64px)" : "100%",
+        }}
+      >
         <LogoContainer>
           <Image
             priority
@@ -105,8 +111,6 @@ const StyledContainer = styled(Container)`
 `;
 
 const NavContent = styled("div")`
-  top: 0px;
-  left: 0px;
   min-height: 130px;
   width: 100%;
   z-index: 1;

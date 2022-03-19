@@ -127,8 +127,10 @@ const IntroText1 = styled.h1`
 `;
 
 const IntroTextContainer = styled.div`
+  width: 100%;
   border-left: 6px solid ${({ theme }) => theme.palette.primary.main};
   padding-left: 20px;
+  margin-left: 20px;
 
   ${({ theme }) => theme.breakpoints.up("sm")} {
     border-left: 12px solid ${({ theme }) => theme.palette.primary.main};
@@ -137,12 +139,11 @@ const IntroTextContainer = styled.div`
 `;
 
 const FormContainer = styled.div`
-  max-width: 920px;
   width: 100%;
 
-  ${({ theme }) => theme.breakpoints.up("sm")} {
+  /* ${({ theme }) => theme.breakpoints.up("sm")} {
     padding-left: 20px;
-  }
+  } */
 `;
 
 const Button = styled.button`

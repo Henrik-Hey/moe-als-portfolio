@@ -8,7 +8,8 @@ import styled from "styled-components";
 const Shiba = () => {
   return (
     <GridSegment
-      title="PRO 1 - SHIBA"
+      title="PREV SECTION - INTRO"
+      footer="NEXT SECTION - POCHUI"
       contentOrder={{ sm: 2, md: 1 }}
       imageOrder={{ sm: 1, md: 2 }}
       content={
@@ -17,14 +18,13 @@ const Shiba = () => {
             name="shiba"
             brief={
               <>
-                Create a mobile app for a new food delivery service, this
+                Create a mobile app for a new food delivery service. This
                 service will provide access to Asian cuisine restaurants all
-                around town, the target audience will be young adults who don’t
-                have a lot of time to cook due to school or work
-                responsibilities.
+                around town. The target audience will be young adults who don’t
+                have much time to cook due to school or work responsibilities.
                 <br />
                 <br />
-                “It can be hard deciding what to sometimes eat, we decided to
+                “It can be hard deciding what sometimes to eat. So I decided to
                 narrow down the options and create a one-stop-shop for all your
                 Asian cuisine needs! Save money, earn rewards, and much more
                 with Shiba INU.”

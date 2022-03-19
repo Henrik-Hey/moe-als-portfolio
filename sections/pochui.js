@@ -7,7 +7,8 @@ import styled from "styled-components";
 const Pochui = () => {
   return (
     <GridSegment
-      title="PRO 2 - POCHUI"
+      title="PREV SECTION - SHIBA"
+      footer="NEXT SECTION - APOLLO"
       contentOrder={{ sm: 2, md: 2 }}
       imageOrder={{ sm: 1, md: 1 }}
       align="flex-start"
@@ -17,15 +18,15 @@ const Pochui = () => {
             name="pochui"
             brief={
               <>
-                Create a mobile / web application for skateboarders who are
-                interested in creating a social platform where they can meet
-                likeminded people and discuss similar topics.
+                Create a mobile / web application for skateboarders interested
+                in creating a social platform where they can meet likeminded
+                people and discuss similar topics.
                 <br />
                 <br />
                 Users can choose if they’d like to revolve their account around
                 art and selling products as a business, or they could take the
-                more standard approach and grow to be a huge media star, either
-                way - Pochui is a platform for everyone!
+                more standard approach and grow to be a massive media star,
+                either way - Pochui is a platform for everyone!
               </>
             }
             timeline="6 Weeks - V2 ongoing"
