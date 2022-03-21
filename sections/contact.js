@@ -46,7 +46,7 @@ const ContactMe = () => {
         </Box>
       ) : (
         <FormContainer>
-          <Box mt={8} component="form" onSubmit={submitFunction}>
+          <Box mb={32} component="form" onSubmit={submitFunction}>
             <Grid container spacing={2}>
               <Grid item xs={12} md={4}>
                 <TextField

@@ -43,7 +43,7 @@ export default function Home() {
         </Section>
       </FadeIn>
       <FadeIn>
-        <Section name="CONTACT ME">
+        <Section name="CONTACT ME" style={{ minHeight: "unset" }}>
           <ContactMe />
         </Section>
       </FadeIn>

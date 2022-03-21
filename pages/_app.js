@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import {
   createTheme,
@@ -76,11 +77,30 @@ const theme = createTheme({
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={theme}>
-      <MUIThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </MUIThemeProvider>
-    </ThemeProvider>
+    <>
+      <Head>
+        <title>MOE.XLS</title>
+        <meta
+          property="og:title"
+          content="Digital Design Portfolio By Moe Als"
+        />
+        <meta
+          property="og:image"
+          content="https://design.moexls.com/images/social_thumb.png"
+        />
+        <meta
+          property="og:description"
+          content="A brief showcase of a few user experience case 
+          studies and visual designs created by me :)"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <ThemeProvider theme={theme}>
+        <MUIThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </MUIThemeProvider>
+      </ThemeProvider>
+    </>
   );
 }
 
